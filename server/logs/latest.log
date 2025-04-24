@@ -1,362 +1,939 @@
-[20:22:09] [Server thread/INFO]: Starting minecraft server version 1.12.2
-[20:22:09] [Server thread/INFO]: Loading properties
-[20:22:09] [Server thread/INFO]: Default game type: SURVIVAL
-[20:22:09] [Server thread/INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
-[20:22:09] [Server thread/INFO]: Debug logging is disabled
-[20:22:09] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[20:22:09] [Server thread/INFO]: Using 4 threads for Netty based IO
-[20:22:09] [Server thread/INFO]: Generating keypair
-[20:22:10] [Server thread/INFO]: Starting Minecraft server on *:25565
-[20:22:10] [Server thread/INFO]: Using epoll channel type
-[20:22:11] [Server thread/ERROR]: Ambiguous plugin name `EaglerPluginInstaller' for files `plugins/EaglerPluginInstaller.jar' and `plugins/EaglerPluginInstaller-1.1.5.jar' in `plugins'
-[20:22:11] [Server thread/ERROR]: Could not load 'plugins/Fapcraft.1.12.2.v1.1.jar' in folder 'plugins'
+[17:24:04] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[17:24:04] [Server thread/INFO]: Loading properties
+[17:24:04] [Server thread/INFO]: Default game type: SURVIVAL
+[17:24:05] [Server thread/INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[17:24:05] [Server thread/INFO]: Debug logging is disabled
+[17:24:05] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:24:05] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:24:05] [Server thread/INFO]: Generating keypair
+[17:24:05] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:24:05] [Server thread/INFO]: Using epoll channel type
+[17:24:06] [Server thread/ERROR]: Could not load 'plugins/LuckPerms-Bukkit-5.4.158.jar' in folder 'plugins'
 org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
-	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:158) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:160) ~[patched_1.12.2.jar:git-Paper-1620]
 	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:136) ~[patched_1.12.2.jar:git-Paper-1620]
 	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.loadPlugins(CraftServer.java:318) ~[patched_1.12.2.jar:git-Paper-1620]
 	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:222) ~[patched_1.12.2.jar:git-Paper-1620]
 	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:616) ~[patched_1.12.2.jar:git-Paper-1620]
 	at java.lang.Thread.run(Unknown Source) [?:?]
-Caused by: java.util.zip.ZipException: zip END header not found
-	at java.util.zip.ZipFile$Source.zerror(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile$Source.findEND(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile$Source.initCEN(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile$Source.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile$Source.get(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile$CleanableResource.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile$CleanableResource.get(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile.<init>(Unknown Source) ~[?:?]
-	at java.util.jar.JarFile.<init>(Unknown Source) ~[?:?]
-	at java.util.jar.JarFile.<init>(Unknown Source) ~[?:?]
-	at java.util.jar.JarFile.<init>(Unknown Source) ~[?:?]
-	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:146) ~[patched_1.12.2.jar:git-Paper-1620]
+Caused by: org.yaml.snakeyaml.error.YAMLException: java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
+	at org.yaml.snakeyaml.reader.StreamReader.update(StreamReader.java:254) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.yaml.snakeyaml.reader.StreamReader.<init>(StreamReader.java:58) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:452) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.plugin.PluginDescriptionFile.<init>(PluginDescriptionFile.java:228) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:155) ~[patched_1.12.2.jar:git-Paper-1620]
 	... 5 more
-[20:22:11] [Server thread/INFO]: Set PluginClassLoader as parallel capable
-[20:22:11] [Server thread/INFO]: [AuthMe] Loading AuthMe v5.6.0-bCUSTOM
-[20:22:11] [Server thread/INFO]: [[EaglerPluginInstaller]] Loading EaglerPluginInstaller v1.1.4
-[20:22:11] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v5.5.7
-[20:22:11] [Server thread/INFO]: [TPA] Loading TPA v2.2.2
-[20:22:11] [Server thread/INFO]: [AdminFun] Loading AdminFun v2.0.7
-[20:22:11] [Server thread/INFO]: [[EaglerPluginUpdater]] Loading EaglerPluginUpdater v1.1.2
-[20:22:11] [Server thread/INFO]: [DupePatch] Loading DupePatch v1.0.0
-[20:22:11] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[20:22:11] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[20:22:11] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[20:22:11] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[20:22:11] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[20:22:11] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
-[20:22:11] [Server thread/INFO]: Preparing level "world"
-[20:22:11] [Server thread/INFO]: -------- World Settings For [world] --------
-[20:22:11] [Server thread/INFO]: Mob Spawn Range: 4
-[20:22:11] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[20:22:11] [Server thread/INFO]: Cane Growth Modifier: 100%
-[20:22:11] [Server thread/INFO]: Melon Growth Modifier: 100%
-[20:22:11] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[20:22:11] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[20:22:11] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[20:22:11] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[20:22:11] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[20:22:11] [Server thread/INFO]: Vine Growth Modifier: 100%
-[20:22:11] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[20:22:11] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[20:22:11] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[20:22:11] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[20:22:11] [Server thread/INFO]: Random Lighting Updates: false
-[20:22:11] [Server thread/INFO]: Structure Info Saving: true
-[20:22:11] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[20:22:11] [Server thread/INFO]: Max TNT Explosions: 100
-[20:22:11] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[20:22:11] [Server thread/INFO]: View Distance: 5
-[20:22:11] [Server thread/INFO]: Item Despawn Rate: 6000
-[20:22:11] [Server thread/INFO]: Item Merge Radius: 2.5
-[20:22:11] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[20:22:11] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[20:22:11] [Server thread/INFO]: Experience Merge Radius: 3.0
-[20:22:11] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[20:22:11] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[20:22:12] [Server thread/INFO]: -------- World Settings For [world_nether] --------
-[20:22:12] [Server thread/INFO]: Mob Spawn Range: 4
-[20:22:12] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: Cane Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: Melon Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: Vine Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[20:22:12] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[20:22:12] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[20:22:12] [Server thread/INFO]: Random Lighting Updates: false
-[20:22:12] [Server thread/INFO]: Structure Info Saving: true
-[20:22:12] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[20:22:12] [Server thread/INFO]: Max TNT Explosions: 100
-[20:22:12] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[20:22:12] [Server thread/INFO]: View Distance: 5
-[20:22:12] [Server thread/INFO]: Item Despawn Rate: 6000
-[20:22:12] [Server thread/INFO]: Item Merge Radius: 2.5
-[20:22:12] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[20:22:12] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[20:22:12] [Server thread/INFO]: Experience Merge Radius: 3.0
-[20:22:12] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[20:22:12] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[20:22:12] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
-[20:22:12] [Server thread/INFO]: Mob Spawn Range: 4
-[20:22:12] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: Cane Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: Melon Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: Vine Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[20:22:12] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[20:22:12] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[20:22:12] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[20:22:12] [Server thread/INFO]: Random Lighting Updates: false
-[20:22:12] [Server thread/INFO]: Structure Info Saving: true
-[20:22:12] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[20:22:12] [Server thread/INFO]: Max TNT Explosions: 100
-[20:22:12] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[20:22:12] [Server thread/INFO]: View Distance: 5
-[20:22:12] [Server thread/INFO]: Item Despawn Rate: 6000
-[20:22:12] [Server thread/INFO]: Item Merge Radius: 2.5
-[20:22:12] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[20:22:12] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[20:22:12] [Server thread/INFO]: Experience Merge Radius: 3.0
-[20:22:12] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[20:22:12] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[20:22:13] [Server thread/INFO]: Preparing start region for level 0 (Seed: 2291877973355258348)
-[20:22:14] [Server thread/INFO]: Preparing spawn area: 0%
-[20:22:15] [Server thread/INFO]: Preparing spawn area: 11%
-[20:22:16] [Server thread/INFO]: Preparing start region for level 1 (Seed: 2291877973355258348)
-[20:22:17] [Server thread/INFO]: Preparing spawn area: 9%
-[20:22:17] [Server thread/INFO]: Preparing start region for level 2 (Seed: 2291877973355258348)
-[20:22:17] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-bCUSTOM
-[20:22:18] [Server thread/INFO]: [AuthMe] SQLite Setup finished
-[20:22:18] [Server thread/INFO]: [AuthMe] No supported permissions system found! Permissions are disabled!
-[20:22:18] [Server thread/WARN]: [AuthMe] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
-[20:22:19] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
-[20:22:19] [Server thread/INFO]: [[EaglerPluginInstaller]] Enabling EaglerPluginInstaller v1.1.4
-[20:22:19] [Server thread/INFO]: Check 1 passed
-[20:22:20] [Server thread/INFO]: Check 3 passed
-[20:22:20] [Server thread/INFO]: --------------------------------------------
-[20:22:20] [Server thread/INFO]: --------------------------------------------
-[20:22:20] [Server thread/INFO]: [EaglerPluginInstaller] EaglerPluginInstaller V1.1.5 is now Enabled! :D
-[20:22:20] [Server thread/INFO]: To use PluginInstaller, run the command "/install <pluginname>" ("install <pluginname>" in console) to install a plugin
-[20:22:20] [Server thread/INFO]: To get a list of installable plugins, use the command "/plist" or "plist" in console
-[20:22:20] [Server thread/INFO]: You can request to add a new plugin to the database by going to https://github.com/darverdevs/PluginInstallerRepo/tree/main
-[20:22:20] [Server thread/INFO]: and creating an issue or pull request of the plugin you want to add
-[20:22:20] [Server thread/INFO]: --------------------------------------------
-[20:22:20] [Server thread/INFO]: --------------------------------------------
-[20:22:20] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v5.5.7
-[20:22:20] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[20:22:20] [Server thread/INFO]: [TPA] Enabling TPA v2.2.2
-[20:22:20] [Server thread/INFO]: [AdminFun] Enabling AdminFun v2.0.7
-[20:22:20] [Server thread/INFO]: AdminFun v2.0.7 is now enabled.
-[20:22:20] [Server thread/INFO]: [[EaglerPluginUpdater]] Enabling EaglerPluginUpdater v1.1.2
-[20:22:20] [Server thread/INFO]: [[EaglerPluginInstaller]] Disabling EaglerPluginInstaller v1.1.4
-[20:22:20] [Server thread/INFO]: --------------------------------------------
-[20:22:20] [Server thread/INFO]: --------------------------------------------
-[20:22:20] [Server thread/INFO]: [EaglerPluginInstaller] PluginInstaller V1.1.5 is now Disabled! D:
-[20:22:20] [Server thread/INFO]: --------------------------------------------
-[20:22:20] [Server thread/INFO]: --------------------------------------------
-[20:22:20] [Server thread/INFO]: [[EaglerPluginInstaller]] Enabling EaglerPluginInstaller v1.1.4
-[20:22:20] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader EaglerPluginInstaller v1.1.4
-[20:22:20] [Server thread/INFO]: Check 1 passed
-[20:22:20] [Server thread/INFO]: Check 3 passed
-[20:22:20] [Server thread/INFO]: --------------------------------------------
-[20:22:20] [Server thread/INFO]: --------------------------------------------
-[20:22:20] [Server thread/INFO]: [EaglerPluginInstaller] EaglerPluginInstaller V1.1.5 is now Enabled! :D
-[20:22:20] [Server thread/INFO]: To use PluginInstaller, run the command "/install <pluginname>" ("install <pluginname>" in console) to install a plugin
-[20:22:20] [Server thread/INFO]: To get a list of installable plugins, use the command "/plist" or "plist" in console
-[20:22:20] [Server thread/INFO]: You can request to add a new plugin to the database by going to https://github.com/darverdevs/PluginInstallerRepo/tree/main
-[20:22:20] [Server thread/INFO]: and creating an issue or pull request of the plugin you want to add
-[20:22:20] [Server thread/INFO]: --------------------------------------------
-[20:22:20] [Server thread/INFO]: --------------------------------------------
-[20:22:20] [Server thread/INFO]: --------------------------------------------
-[20:22:20] [Server thread/INFO]: --------------------------------------------
-[20:22:20] [Server thread/INFO]: [EaglerPluginUpdater] EaglerPluginUpdater V1.1.2 is now Enabled! :D
-[20:22:20] [Server thread/INFO]: You do not need to do anything, this plugin will automatically update your PluginUpdater on startup
-[20:22:21] [Server thread/INFO]: --------------------------------------------
-[20:22:21] [Server thread/INFO]: --------------------------------------------
-[20:22:21] [Server thread/INFO]: [DupePatch] Enabling DupePatch v1.0.0
-[20:22:21] [Server thread/INFO]: Done (9.634s)! For help, type "help" or "?"
-[20:22:21] [Server thread/INFO]: Timings Reset
-[20:22:21] [Craft Scheduler Thread - 2/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
-[20:22:21] [Craft Scheduler Thread - 2/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
-[20:22:21] [Craft Scheduler Thread - 2/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
-[20:22:21] [Craft Scheduler Thread - 2/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
-[20:24:16] [User Authenticator #1/INFO]: UUID of player Bodeman115 is f22a1207-e568-3976-bf72-f2bf1647e46a
-[20:24:17] [Server thread/INFO]: Bodeman115[/0:0:0:0:0:0:0:1%0:44686] logged in with entity id 44 at ([world]-276.3694858417871, 79.0, 4986.662347633845)
-[20:24:22] [User Authenticator #1/INFO]: UUID of player leif_ is 3751325d-0ee9-3ce7-8116-c5483ea98779
-[20:24:22] [Server thread/INFO]: leif_[/0:0:0:0:0:0:0:1%0:44700] logged in with entity id 113 at ([world]27.699999988079067, 8.0, 5008.459350647712)
-[20:24:28] [Craft Scheduler Thread - 16/INFO]: [AuthMe] The user Bodeman115 has 21 accounts:
-[20:24:28] [Craft Scheduler Thread - 16/INFO]: [AuthMe] jamar_higgs, cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150.
-[20:24:28] [Craft Scheduler Thread - 16/INFO]: [AuthMe] Bodeman115 logged in 0:0:0:0:0:0:0:1%0
-[20:24:32] [Async Chat Thread - #0/INFO]: <Bodeman115> yo
-[20:24:36] [Craft Scheduler Thread - 17/INFO]: [AuthMe] The user leif_ has 21 accounts:
-[20:24:36] [Craft Scheduler Thread - 17/INFO]: [AuthMe] jamar_higgs, cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150.
-[20:24:36] [Craft Scheduler Thread - 17/INFO]: [AuthMe] leif_ logged in 0:0:0:0:0:0:0:1%0
-[20:24:39] [Async Chat Thread - #0/INFO]: <leif_> hi bode
-[20:24:43] [Server thread/INFO]: Bodeman115 issued server command: /gamemode c
-[20:24:43] [Server thread/INFO]: [Bodeman115: Set own game mode to Creative Mode]
-[20:25:00] [Server thread/INFO]: Bodeman115 issued server command: /gamemode s
-[20:25:00] [Server thread/INFO]: [Bodeman115: Set own game mode to Survival Mode]
-[20:25:05] [Async Chat Thread - #0/INFO]: <leif_> im still at school waiting for my parents to get on
-[20:25:08] [Server thread/WARN]: [Minecraft.WorldEdit] [WorldEdit] No compatible nms block class found.
-[20:25:15] [Async Chat Thread - #0/INFO]: <Bodeman115> damn
-[20:26:20] [User Authenticator #2/INFO]: UUID of player masonclaus is 9644e7f4-50fe-3930-8c9f-7e8401f8cd61
-[20:26:20] [Server thread/INFO]: masonclaus[/0:0:0:0:0:0:0:1%0:37836] logged in with entity id 320 at ([world]-2555.524201293437, 64.0, 791.4988731937417)
-[20:26:25] [Async Chat Thread - #1/INFO]: <leif_> can you leave th server on while being off your computer
-[20:26:27] [Craft Scheduler Thread - 30/INFO]: [AuthMe] The user masonclaus has 21 accounts:
-[20:26:27] [Craft Scheduler Thread - 30/INFO]: [AuthMe] jamar_higgs, cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150.
-[20:26:27] [Craft Scheduler Thread - 30/INFO]: [AuthMe] masonclaus logged in 0:0:0:0:0:0:0:1%0
-[20:26:33] [Async Chat Thread - #1/INFO]: <Bodeman115> i can try
-[20:26:46] [Async Chat Thread - #1/INFO]: <leif_> aight
-[20:26:49] [Server thread/INFO]: masonclaus hit the ground too hard
-[20:27:12] [Server thread/INFO]: Bodeman115 issued server command: /gamemode c
-[20:27:12] [Server thread/INFO]: [Bodeman115: Set own game mode to Creative Mode]
-[20:27:33] [Server thread/INFO]: leif_ issued server command: /tpa masonclaus
-[20:27:38] [Server thread/INFO]: masonclaus issued server command: /tpaccept
-[20:27:42] [Server thread/INFO]: leif_ issued server command: /home
-[20:29:30] [Server thread/INFO]: Bodeman115 issued server command: /gamemode s
-[20:29:30] [Server thread/INFO]: [Bodeman115: Set own game mode to Survival Mode]
-[20:30:02] [Server thread/INFO]: masonclaus lost connection: Disconnected
-[20:30:02] [Server thread/INFO]: masonclaus left the game
-[20:30:05] [Async Chat Thread - #2/INFO]: <Bodeman115> leif tpa to me
-[20:30:49] [Async Chat Thread - #2/INFO]: <Bodeman115> leif i found the end portal
-[20:30:54] [Async Chat Thread - #2/INFO]: <leif_> sweet
-[20:30:58] [Async Chat Thread - #2/INFO]: <leif_> cords?
-[20:31:00] [Async Chat Thread - #2/INFO]: <Bodeman115> wanna tpa
-[20:31:05] [Async Chat Thread - #2/INFO]: <leif_> nah
-[20:31:20] [Async Chat Thread - #2/INFO]: <leif_> im not prepared enough
-[20:31:28] [Async Chat Thread - #2/INFO]: <leif_> cords?
-[20:31:41] [Async Chat Thread - #2/INFO]: <Bodeman115> its -3022 12 4985
-[20:31:56] [Async Chat Thread - #2/INFO]: <Bodeman115> kinda far
-[20:35:22] [Async Chat Thread - #3/INFO]: <leif_> dont kill the dragon yet
-[20:35:34] [Async Chat Thread - #3/INFO]: <Bodeman115> nah i aint gunna for a bit
-[20:35:48] [Async Chat Thread - #3/INFO]: <leif_> yeah cus if you do people get bored of the server and then leave
-[20:35:55] [Async Chat Thread - #3/INFO]: <Bodeman115> yeah
-[20:37:05] [Async Chat Thread - #4/INFO]: <Bodeman115> thats kinda why i dont want you server up at non school hrs
-[20:37:16] [Async Chat Thread - #4/INFO]: <leif_> yead
-[20:37:25] [Async Chat Thread - #4/INFO]: <Bodeman115> so peopld dont greef and progress fast
-[20:37:35] [Async Chat Thread - #4/INFO]: <leif_> just make a rule that if you beat the dragon you will get banned
-[20:37:41] [Async Chat Thread - #4/INFO]: <Bodeman115> nah
-[20:40:06] [Server thread/INFO]: leif_ has made the advancement [Cover Me With Diamonds]
-[20:40:10] [Async Chat Thread - #5/INFO]: <Bodeman115> im on my reg pc and i get about 700-2000 fps
-[20:40:19] [Async Chat Thread - #5/INFO]: <leif_> holy sheet
-[20:40:31] [Async Chat Thread - #5/INFO]: <Bodeman115> gtg
-[20:40:32] [Server thread/INFO]: Bodeman115 lost connection: Disconnected
-[20:40:32] [Server thread/INFO]: Bodeman115 left the game
-[20:41:39] [Server thread/INFO]: [Server] i see you leif
-[20:41:44] [Async Chat Thread - #6/INFO]: <leif_> gulp
-[20:41:50] [Async Chat Thread - #6/INFO]: <leif_> what im doing
-[20:41:58] [Server thread/INFO]: [Server] playing minecraft
-[20:42:02] [Async Chat Thread - #6/INFO]: <leif_> oh
-[20:42:03] [Async Chat Thread - #6/INFO]: <leif_> lmao
-[20:43:52] [User Authenticator #3/INFO]: UUID of player Cobalt is 69d9e634-affb-3c5a-b905-d78f70d5a122
-[20:43:52] [Server thread/INFO]: Cobalt[/0:0:0:0:0:0:0:1%0:46462] logged in with entity id 2567 at ([world]-21.35213461419537, 7.0, 4997.58000581052)
-[20:43:56] [Async Chat Thread - #7/INFO]: <leif_> hi daniel
-[20:43:59] [Craft Scheduler Thread - 159/INFO]: [AuthMe] The user Cobalt has 21 accounts:
-[20:43:59] [Craft Scheduler Thread - 159/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150.
-[20:43:59] [Craft Scheduler Thread - 159/INFO]: [AuthMe] Cobalt logged in 0:0:0:0:0:0:0:1%0
-[20:44:00] [Async Chat Thread - #7/INFO]: <Cobalt> hi
-[20:45:48] [Server thread/INFO]: leif_ has made the advancement [Sweet dreams]
-[20:46:02] [Async Chat Thread - #8/INFO]: <Cobalt> wait sleep again rq
-[20:52:47] [Server thread/INFO]: leif_ has made the advancement [Hot Stuff]
-[21:00:27] [Server thread/INFO]: leif_ lost connection: Disconnected
-[21:00:27] [Server thread/INFO]: leif_ left the game
-[21:11:58] [Server thread/INFO]: [Server] dan you here?
-[21:12:00] [Async Chat Thread - #9/INFO]: <Cobalt> ya
-[21:12:05] [Server thread/INFO]: [Server] oh hi
-[21:12:06] [Async Chat Thread - #9/INFO]: <Cobalt> i found a ss of my base coords
-[21:12:11] [Async Chat Thread - #9/INFO]: <Cobalt> old base
-[21:12:15] [Async Chat Thread - #9/INFO]: <Cobalt> so im going back to there
-[21:12:17] [Server thread/INFO]: [Server] sic
-[21:12:47] [Server thread/INFO]: [Server] anyone els here
-[21:12:51] [Async Chat Thread - #9/INFO]: <Cobalt> nah
-[21:16:45] [Async Chat Thread - #10/INFO]: <Cobalt> reached my old base
-[21:16:55] [Server thread/INFO]: [Server] cool
-[21:39:33] [User Authenticator #4/INFO]: UUID of player skibidi_toilet is fc9742a0-1735-33aa-aa6c-ca922990afa9
-[21:39:33] [Server thread/INFO]: skibidi_toilet[/0:0:0:0:0:0:0:1%0:43914] logged in with entity id 9862 at ([world]-346.96826460573016, 74.0, -342.8691132451162)
-[21:39:40] [Server thread/INFO]: [Server] welcome
-[21:39:41] [Async Chat Thread - #11/INFO]: <Cobalt> i found my old base
-[21:39:43] [Craft Scheduler Thread - 561/INFO]: [AuthMe] The user skibidi_toilet has 21 accounts:
-[21:39:43] [Craft Scheduler Thread - 561/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150.
-[21:39:43] [Craft Scheduler Thread - 561/INFO]: [AuthMe] skibidi_toilet logged in 0:0:0:0:0:0:0:1%0
-[21:41:35] [Server thread/INFO]: skibidi_toilet lost connection: Disconnected
-[21:41:35] [Server thread/INFO]: skibidi_toilet left the game
-[21:41:39] [User Authenticator #5/INFO]: UUID of player skibidi_toilet is fc9742a0-1735-33aa-aa6c-ca922990afa9
-[21:41:39] [Server thread/INFO]: skibidi_toilet[/0:0:0:0:0:0:0:1%0:47372] logged in with entity id 10248 at ([world]-378.19284238401855, 75.0, -427.69999998807907)
-[21:41:48] [Craft Scheduler Thread - 576/INFO]: [AuthMe] The user skibidi_toilet has 21 accounts:
-[21:41:48] [Craft Scheduler Thread - 576/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150.
-[21:41:48] [Craft Scheduler Thread - 576/INFO]: [AuthMe] skibidi_toilet logged in 0:0:0:0:0:0:0:1%0
-[21:41:51] [User Authenticator #5/INFO]: UUID of player leif_ is 3751325d-0ee9-3ce7-8116-c5483ea98779
-[21:41:51] [Server thread/INFO]: leif_[/0:0:0:0:0:0:0:1%0:51416] logged in with entity id 10285 at ([world]-298.70739890030706, 12.0, -217.3087250963228)
-[21:42:05] [Craft Scheduler Thread - 578/INFO]: [AuthMe] The user leif_ has 21 accounts:
-[21:42:05] [Craft Scheduler Thread - 578/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150.
-[21:42:05] [Craft Scheduler Thread - 578/INFO]: [AuthMe] leif_ logged in 0:0:0:0:0:0:0:1%0
-[21:42:09] [Async Chat Thread - #12/INFO]: <leif_> hey yall
-[21:42:13] [Async Chat Thread - #12/INFO]: <skibidi_toilet> hi leif
-[21:42:13] [Async Chat Thread - #12/INFO]: <Cobalt> hi
-[21:42:17] [Server thread/INFO]: [Server] yo
-[21:42:28] [Async Chat Thread - #12/INFO]: <leif_> i got 17 diamonds
-[21:42:33] [Async Chat Thread - #12/INFO]: <Cobalt> i got 6
-[21:42:37] [Async Chat Thread - #12/INFO]: <skibidi_toilet> i think you mean 25
-[21:42:46] [Server thread/INFO]: [Server] i got 2
-[21:42:54] [Async Chat Thread - #12/INFO]: <leif_> i actuall used thoseto get full diamond
-[21:43:16] [Async Chat Thread - #12/INFO]: <leif_> im strip mining rn
-[21:45:43] [Async Chat Thread - #13/INFO]: <leif_> can yo make mob farms in 1.12.2?
-[21:45:44] [Async Chat Thread - #13/INFO]: <skibidi_toilet> nice
-[21:46:49] [Async Chat Thread - #14/INFO]: <skibidi_toilet> im so dumb i just made 2 helmets when i wanted a helmet and boots and i dont have enough diamonds to make boots now
-[21:47:03] [Async Chat Thread - #14/INFO]: <leif_> lmao
-[21:47:06] [Server thread/INFO]: [Server] BAHAHAHAHAHAHAH
-[21:48:06] [Server thread/INFO]: Cobalt has made the advancement [Ice Bucket Challenge]
-[21:48:13] [Server thread/INFO]: [Server] waht?
-[21:48:25] [Server thread/INFO]: [Server] who namanated you
-[21:53:05] [Async Chat Thread - #15/INFO]: <leif_> bode, you should up the difficulty to normal
-[21:54:00] [Server thread/INFO]: [Server] it is
-[21:54:10] [Async Chat Thread - #16/INFO]: <leif_> no its on easy
-[21:54:18] [Server thread/INFO]: [Server] say will suck it up
-[21:55:38] [Server thread/INFO]: [Server] somehow i got a server runing on my windows chromebook who how to conect to it tho
-[22:04:23] [Server thread/INFO]: skibidi_toilet lost connection: Disconnected
-[22:04:23] [Server thread/INFO]: skibidi_toilet left the game
-[22:05:51] [Server thread/WARN]: Cobalt moved wrongly!
-[22:07:58] [Server thread/INFO]: [Server] dan you still here?
-[22:08:01] [Async Chat Thread - #17/INFO]: <Cobalt> yeah
-[22:08:12] [Server thread/INFO]: [Server] are you cheating?
-[22:08:15] [Async Chat Thread - #17/INFO]: <Cobalt> nah
-[22:08:27] [Server thread/INFO]: [Server] well server thinks you are
-[22:08:29] [Async Chat Thread - #17/INFO]: <Cobalt> what
-[22:08:45] [Server thread/INFO]: [Server] [22:05:51 WARN]: Cobalt moved wrongly!
-[22:08:57] [Async Chat Thread - #17/INFO]: <Cobalt> im moving normally
-[22:08:59] [Async Chat Thread - #17/INFO]: <Cobalt> huh
-[22:09:04] [Server thread/INFO]: [Server] idk
-[22:09:07] [Async Chat Thread - #17/INFO]: <Cobalt> T_T
-[22:09:34] [Async Chat Thread - #17/INFO]: <Cobalt> i think i found a mineshaft thats connected to 2 mineshafts
-[22:09:55] [Server thread/INFO]: [Server] wow
-[22:11:34] [Server thread/INFO]: Unknown command. Type "/help" for help.
-[22:11:41] [Server thread/INFO]: Unknown command. Type "/help" for help.
-[22:12:10] [Async Chat Thread - #18/INFO]: <leif_> yo why is my game lagging so hard
-[22:12:33] [Async Chat Thread - #18/INFO]: <leif_> like 2 fps
-[22:12:40] [Server thread/INFO]: [Server] chromebook
-[22:12:49] [Async Chat Thread - #18/INFO]: <leif_> still
-[22:13:00] [Async Chat Thread - #18/INFO]: <leif_> just a spike i guees
-[22:13:04] [Async Chat Thread - #18/INFO]: <leif_> back to 60
-[22:13:12] [Server thread/INFO]: [Server] if you are loading new chunks it will go sown
-[22:13:37] [Server thread/INFO]: Unknown command. Type "/help" for help.
-[22:14:37] [Server thread/INFO]: Unknown command. Type "/help" for help.
-[22:14:57] [Server thread/INFO]: Unknown command. Type "/help" for help.
-[22:15:02] [Server thread/INFO]: Unknown command. Type "/help" for help.
-[22:15:05] [Server thread/INFO]: Unknown command. Type "/help" for help.
-[22:15:50] [Async Chat Thread - #19/INFO]: <Cobalt> i found a spider spawner
-[22:15:56] [Async Chat Thread - #19/INFO]: <Cobalt> and like 13 cave spider spawners
-[22:16:12] [Server thread/INFO]: Unknown command. Type "/help" for help.
-[22:16:19] [Server thread/INFO]: [Server] server might be laggy for a bit
-[22:16:24] [Server thread/INFO]: [Server] sorry
+Caused by: java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
+	at java.util.zip.ZipFile$ZipFileInputStream.initDataOffset(Unknown Source) ~[?:?]
+	at java.util.zip.ZipFile$ZipFileInputStream.read(Unknown Source) ~[?:?]
+	at java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(Unknown Source) ~[?:?]
+	at java.util.zip.InflaterInputStream.read(Unknown Source) ~[?:?]
+	at java.io.FilterInputStream.read(Unknown Source) ~[?:?]
+	at java.io.PushbackInputStream.read(Unknown Source) ~[?:?]
+	at org.yaml.snakeyaml.reader.UnicodeReader.init(UnicodeReader.java:92) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.yaml.snakeyaml.reader.UnicodeReader.read(UnicodeReader.java:124) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.yaml.snakeyaml.reader.StreamReader.update(StreamReader.java:223) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.yaml.snakeyaml.reader.StreamReader.<init>(StreamReader.java:58) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:452) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.plugin.PluginDescriptionFile.<init>(PluginDescriptionFile.java:228) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:155) ~[patched_1.12.2.jar:git-Paper-1620]
+	... 5 more
+[17:24:06] [Server thread/ERROR]: Ambiguous plugin name `EaglerPluginInstaller' for files `plugins/EaglerPluginInstaller.jar' and `plugins/EaglerPluginInstaller-1.1.5.jar' in `plugins'
+[17:24:06] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[17:24:06] [Server thread/INFO]: [[EaglerPluginInstaller]] Loading EaglerPluginInstaller v1.1.4
+[17:24:06] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v5.5.7
+[17:24:06] [Server thread/INFO]: [TPA] Loading TPA v2.2.2
+[17:24:06] [Server thread/INFO]: [AdminFun] Loading AdminFun v2.0.7
+[17:24:06] [Server thread/INFO]: [[EaglerPluginUpdater]] Loading EaglerPluginUpdater v1.1.2
+[17:24:06] [Server thread/INFO]: [Vault] Loading Vault v1.2.27-b349
+[17:24:06] [Server thread/INFO]: [DupePatch] Loading DupePatch v1.0.0
+[17:24:06] [Server thread/INFO]: [AuthMe] Loading AuthMe v5.6.0-bCUSTOM
+[17:24:06] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:24:06] [Server thread/INFO]: [Vault] Enabling Vault v1.2.27-b349
+[17:24:06] [Server thread/INFO]: [Vault][Permission] SuperPermissions loaded as backup permission system.
+[17:24:06] [Server thread/INFO]: [Vault] Enabled Version 1.2.27-b349
+[17:24:06] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[17:24:06] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[17:24:06] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[17:24:06] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[17:24:06] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[17:24:06] [Server thread/INFO]: Preparing level "world"
+[17:24:06] [Server thread/INFO]: -------- World Settings For [world] --------
+[17:24:06] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[17:24:06] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[17:24:06] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[17:24:06] [Server thread/INFO]: Random Lighting Updates: false
+[17:24:06] [Server thread/INFO]: Structure Info Saving: true
+[17:24:06] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[17:24:06] [Server thread/INFO]: Cane Growth Modifier: 100%
+[17:24:06] [Server thread/INFO]: Melon Growth Modifier: 100%
+[17:24:06] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[17:24:06] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[17:24:06] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[17:24:06] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[17:24:06] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[17:24:06] [Server thread/INFO]: Vine Growth Modifier: 100%
+[17:24:06] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[17:24:06] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[17:24:06] [Server thread/INFO]: Max TNT Explosions: 100
+[17:24:06] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[17:24:06] [Server thread/INFO]: Mob Spawn Range: 4
+[17:24:06] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[17:24:06] [Server thread/INFO]: View Distance: 5
+[17:24:06] [Server thread/INFO]: Item Despawn Rate: 6000
+[17:24:06] [Server thread/INFO]: Item Merge Radius: 2.5
+[17:24:06] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[17:24:06] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[17:24:06] [Server thread/INFO]: Experience Merge Radius: 3.0
+[17:24:06] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[17:24:07] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[17:24:07] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[17:24:07] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[17:24:07] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[17:24:07] [Server thread/INFO]: Random Lighting Updates: false
+[17:24:07] [Server thread/INFO]: Structure Info Saving: true
+[17:24:07] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: Cane Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: Melon Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: Vine Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[17:24:07] [Server thread/INFO]: Max TNT Explosions: 100
+[17:24:07] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[17:24:07] [Server thread/INFO]: Mob Spawn Range: 4
+[17:24:07] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[17:24:07] [Server thread/INFO]: View Distance: 5
+[17:24:07] [Server thread/INFO]: Item Despawn Rate: 6000
+[17:24:07] [Server thread/INFO]: Item Merge Radius: 2.5
+[17:24:07] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[17:24:07] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[17:24:07] [Server thread/INFO]: Experience Merge Radius: 3.0
+[17:24:07] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[17:24:07] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[17:24:07] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[17:24:07] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[17:24:07] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[17:24:07] [Server thread/INFO]: Random Lighting Updates: false
+[17:24:07] [Server thread/INFO]: Structure Info Saving: true
+[17:24:07] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: Cane Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: Melon Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: Vine Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[17:24:07] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[17:24:07] [Server thread/INFO]: Max TNT Explosions: 100
+[17:24:07] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[17:24:07] [Server thread/INFO]: Mob Spawn Range: 4
+[17:24:07] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[17:24:07] [Server thread/INFO]: View Distance: 5
+[17:24:07] [Server thread/INFO]: Item Despawn Rate: 6000
+[17:24:07] [Server thread/INFO]: Item Merge Radius: 2.5
+[17:24:07] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[17:24:07] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[17:24:07] [Server thread/INFO]: Experience Merge Radius: 3.0
+[17:24:07] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[17:24:07] [Server thread/INFO]: Preparing start region for level 0 (Seed: 2291877973355258348)
+[17:24:08] [Server thread/INFO]: Preparing spawn area: 2%
+[17:24:09] [Server thread/INFO]: Preparing start region for level 1 (Seed: 2291877973355258348)
+[17:24:09] [Server thread/INFO]: Preparing start region for level 2 (Seed: 2291877973355258348)
+[17:24:09] [Server thread/INFO]: [[EaglerPluginInstaller]] Enabling EaglerPluginInstaller v1.1.4
+[17:24:09] [Server thread/INFO]: Check 1 passed
+[17:24:11] [Server thread/INFO]: Check 3 passed
+[17:24:11] [Server thread/INFO]: --------------------------------------------
+[17:24:11] [Server thread/INFO]: --------------------------------------------
+[17:24:11] [Server thread/INFO]: [EaglerPluginInstaller] EaglerPluginInstaller V1.1.5 is now Enabled! :D
+[17:24:11] [Server thread/INFO]: To use PluginInstaller, run the command "/install <pluginname>" ("install <pluginname>" in console) to install a plugin
+[17:24:11] [Server thread/INFO]: To get a list of installable plugins, use the command "/plist" or "plist" in console
+[17:24:11] [Server thread/INFO]: You can request to add a new plugin to the database by going to https://github.com/darverdevs/PluginInstallerRepo/tree/main
+[17:24:11] [Server thread/INFO]: and creating an issue or pull request of the plugin you want to add
+[17:24:11] [Server thread/INFO]: --------------------------------------------
+[17:24:11] [Server thread/INFO]: --------------------------------------------
+[17:24:11] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v5.5.7
+[17:24:11] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[17:24:11] [Server thread/INFO]: [TPA] Enabling TPA v2.2.2
+[17:24:11] [Server thread/INFO]: [AdminFun] Enabling AdminFun v2.0.7
+[17:24:11] [Server thread/INFO]: AdminFun v2.0.7 is now enabled.
+[17:24:11] [Server thread/INFO]: [[EaglerPluginUpdater]] Enabling EaglerPluginUpdater v1.1.2
+[17:24:12] [Server thread/INFO]: [[EaglerPluginInstaller]] Disabling EaglerPluginInstaller v1.1.4
+[17:24:12] [Server thread/INFO]: --------------------------------------------
+[17:24:12] [Server thread/INFO]: --------------------------------------------
+[17:24:12] [Server thread/INFO]: [EaglerPluginInstaller] PluginInstaller V1.1.5 is now Disabled! D:
+[17:24:12] [Server thread/INFO]: --------------------------------------------
+[17:24:12] [Server thread/INFO]: --------------------------------------------
+[17:24:12] [Server thread/INFO]: [[EaglerPluginInstaller]] Enabling EaglerPluginInstaller v1.1.4
+[17:24:12] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader EaglerPluginInstaller v1.1.4
+[17:24:12] [Server thread/INFO]: Check 1 passed
+[17:24:12] [Server thread/INFO]: Check 3 passed
+[17:24:12] [Server thread/INFO]: --------------------------------------------
+[17:24:12] [Server thread/INFO]: --------------------------------------------
+[17:24:12] [Server thread/INFO]: [EaglerPluginInstaller] EaglerPluginInstaller V1.1.5 is now Enabled! :D
+[17:24:12] [Server thread/INFO]: To use PluginInstaller, run the command "/install <pluginname>" ("install <pluginname>" in console) to install a plugin
+[17:24:12] [Server thread/INFO]: To get a list of installable plugins, use the command "/plist" or "plist" in console
+[17:24:12] [Server thread/INFO]: You can request to add a new plugin to the database by going to https://github.com/darverdevs/PluginInstallerRepo/tree/main
+[17:24:12] [Server thread/INFO]: and creating an issue or pull request of the plugin you want to add
+[17:24:12] [Server thread/INFO]: --------------------------------------------
+[17:24:12] [Server thread/INFO]: --------------------------------------------
+[17:24:12] [Server thread/INFO]: --------------------------------------------
+[17:24:12] [Server thread/INFO]: --------------------------------------------
+[17:24:12] [Server thread/INFO]: [EaglerPluginUpdater] EaglerPluginUpdater V1.1.2 is now Enabled! :D
+[17:24:12] [Server thread/INFO]: You do not need to do anything, this plugin will automatically update your PluginUpdater on startup
+[17:24:12] [Server thread/INFO]: --------------------------------------------
+[17:24:12] [Server thread/INFO]: --------------------------------------------
+[17:24:12] [Server thread/INFO]: [DupePatch] Enabling DupePatch v1.0.0
+[17:24:12] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-bCUSTOM
+[17:24:13] [Server thread/INFO]: [AuthMe] SQLite Setup finished
+[17:24:13] [Server thread/INFO]: [AuthMe] Hooked into Vault!
+[17:24:14] [Server thread/WARN]: [AuthMe] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[17:24:14] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[17:24:14] [Server thread/INFO]: Done (8.456s)! For help, type "help" or "?"
+[17:24:14] [Server thread/INFO]: Timings Reset
+[17:24:14] [Craft Scheduler Thread - 0/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[17:24:14] [Craft Scheduler Thread - 2/WARN]: [Vault] Plugin Vault v1.2.27-b349 generated an exception while executing task 3
+java.lang.NoSuchMethodError: 'org.bukkit.entity.Player[] org.bukkit.Server.getOnlinePlayers()'
+	at net.milkbowl.vault.Metrics.postPlugin(Metrics.java:387) ~[?:?]
+	at net.milkbowl.vault.Metrics.access$400(Metrics.java:63) ~[?:?]
+	at net.milkbowl.vault.Metrics$4.run(Metrics.java:275) ~[?:?]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftTask.run(CraftTask.java:64) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:52) ~[patched_1.12.2.jar:git-Paper-1620]
+	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22) ~[patched_1.12.2.jar:git-Paper-1620]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+[17:24:14] [Craft Scheduler Thread - 0/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[17:24:14] [Craft Scheduler Thread - 0/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[17:24:14] [Craft Scheduler Thread - 0/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[17:24:15] [Craft Scheduler Thread - 3/WARN]: [Fatal Error] :6:3: The element type "hr" must be terminated by the matching end-tag "</hr>".
+[17:24:33] [User Authenticator #1/INFO]: UUID of player imsooooooocool is f88c5ac0-6429-38c6-b7b0-80921b55c676
+[17:24:33] [Server thread/INFO]: imsooooooocool[/0:0:0:0:0:0:0:1%0:49754] logged in with entity id 40 at ([world]-701.4387760160791, 200.0, -1493.447870625238)
+[17:24:42] [User Authenticator #1/INFO]: UUID of player vivy is 45f07587-81a1-35e5-8227-e52d8d6c2036
+[17:24:42] [Server thread/INFO]: vivy[/0:0:0:0:0:0:0:1%0:40742] logged in with entity id 777 at ([world]-1043.5657630898006, 76.0, -528.9969880560293)
+[17:24:44] [Craft Scheduler Thread - 3/INFO]: [AuthMe] The user imsooooooocool has 33 accounts:
+[17:24:44] [Craft Scheduler Thread - 3/INFO]: [AuthMe] jamar_higgs, cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:24:44] [Craft Scheduler Thread - 3/INFO]: [AuthMe] imsooooooocool logged in 0:0:0:0:0:0:0:1%0
+[17:24:46] [Craft Scheduler Thread - 5/INFO]: [AuthMe] The user vivy has 33 accounts:
+[17:24:46] [Craft Scheduler Thread - 5/INFO]: [AuthMe] jamar_higgs, cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:24:46] [Craft Scheduler Thread - 5/INFO]: [AuthMe] vivy logged in 0:0:0:0:0:0:0:1%0
+[17:24:47] [User Authenticator #1/INFO]: UUID of player heny is 56025289-c85c-3a4d-9153-a0a5552d8fd6
+[17:24:47] [Server thread/INFO]: heny[/0:0:0:0:0:0:0:1%0:40744] logged in with entity id 1109 at ([world]-451.5204663463371, 60.976732158084346, 175.17447242890194)
+[17:24:48] [Server thread/WARN]: [Minecraft.WorldEdit] [WorldEdit] No compatible nms block class found.
+[17:24:53] [Craft Scheduler Thread - 6/INFO]: [AuthMe] heny used the wrong password
+[17:24:53] [Server thread/INFO]: heny lost connection: Wrong password!
+[17:24:53] [Server thread/INFO]: heny left the game
+[17:24:53] [Server thread/WARN]: handleDisconnection() called twice
+[17:24:56] [User Authenticator #1/INFO]: UUID of player heny is 56025289-c85c-3a4d-9153-a0a5552d8fd6
+[17:24:57] [Server thread/INFO]: heny[/0:0:0:0:0:0:0:1%0:45942] logged in with entity id 1179 at ([world]-451.5204663463371, 59.37096748259095, 175.17447242890194)
+[17:25:00] [Craft Scheduler Thread - 6/INFO]: [AuthMe] The user heny has 33 accounts:
+[17:25:00] [Craft Scheduler Thread - 6/INFO]: [AuthMe] jamar_higgs, cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:25:00] [Craft Scheduler Thread - 6/INFO]: [AuthMe] heny logged in 0:0:0:0:0:0:0:1%0
+[17:25:04] [User Authenticator #1/INFO]: UUID of player Cobalt is 69d9e634-affb-3c5a-b905-d78f70d5a122
+[17:25:05] [Server thread/INFO]: Cobalt[/0:0:0:0:0:0:0:1%0:56704] logged in with entity id 1186 at ([world]240.7488984083315, 14.0, 533.8397376107379)
+[17:25:05] [Server thread/INFO]: Unknown command. Type "/help" for help.
+[17:25:09] [Craft Scheduler Thread - 6/INFO]: [AuthMe] The user Cobalt has 33 accounts:
+[17:25:09] [Craft Scheduler Thread - 6/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:25:09] [Craft Scheduler Thread - 6/INFO]: [AuthMe] Cobalt logged in 0:0:0:0:0:0:0:1%0
+[17:25:21] [Server thread/INFO]: imsooooooocool has made the advancement [Isn't It Iron Pick]
+[17:25:28] [User Authenticator #1/INFO]: UUID of player leif_ is 3751325d-0ee9-3ce7-8116-c5483ea98779
+[17:25:29] [Server thread/INFO]: leif_[/0:0:0:0:0:0:0:1%0:50436] logged in with entity id 1249 at ([world]-699.6284720935203, 74.88212009154864, -1477.303746045762)
+[17:25:38] [Craft Scheduler Thread - 9/INFO]: [AuthMe] The user leif_ has 33 accounts:
+[17:25:38] [Craft Scheduler Thread - 9/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:25:38] [Craft Scheduler Thread - 9/INFO]: [AuthMe] leif_ logged in 0:0:0:0:0:0:0:1%0
+[17:25:46] [Async Chat Thread - #0/INFO]: <imsooooooocool> wait
+[17:25:51] [Server thread/INFO]: imsooooooocool was slain by leif_
+[17:25:55] [Server thread/WARN]: imsooooooocool was kicked for floating too long!
+[17:25:55] [Server thread/INFO]: imsooooooocool lost connection: Flying is not enabled on this server
+[17:25:55] [Server thread/INFO]: imsooooooocool left the game
+[17:25:55] [Server thread/WARN]: handleDisconnection() called twice
+[17:26:00] [Async Chat Thread - #0/INFO]: <vivy> leif you beast
+[17:26:03] [User Authenticator #1/INFO]: UUID of player imsooooooocool is f88c5ac0-6429-38c6-b7b0-80921b55c676
+[17:26:03] [Server thread/INFO]: imsooooooocool[/0:0:0:0:0:0:0:1%0:34220] logged in with entity id 1402 at ([world]-722.0710358536874, 70.78947876269956, -1516.9022593127522)
+[17:26:18] [Craft Scheduler Thread - 14/INFO]: [AuthMe] The user imsooooooocool has 33 accounts:
+[17:26:18] [Craft Scheduler Thread - 14/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:26:18] [Craft Scheduler Thread - 14/INFO]: [AuthMe] imsooooooocool logged in 0:0:0:0:0:0:0:1%0
+[17:26:23] [Server thread/INFO]: Cobalt drowned
+[17:26:43] [Server thread/INFO]: Unknown command. Type "/help" for help.
+[17:26:51] [User Authenticator #1/INFO]: UUID of player Bodeman115 is f22a1207-e568-3976-bf72-f2bf1647e46a
+[17:26:52] [Server thread/INFO]: Bodeman115[/0:0:0:0:0:0:0:1%0:48076] logged in with entity id 1857 at ([world]-248.24861439987248, 88.0, 62.512854187822484)
+[17:26:55] [Async Chat Thread - #0/INFO]: <heny> bodeeeeeeeeeeee
+[17:27:04] [Craft Scheduler Thread - 19/INFO]: [AuthMe] Bodeman115 used the wrong password
+[17:27:04] [Server thread/INFO]: Bodeman115 lost connection: Wrong password!
+[17:27:04] [Server thread/INFO]: Bodeman115 left the game
+[17:27:04] [Server thread/WARN]: handleDisconnection() called twice
+[17:27:06] [User Authenticator #1/INFO]: UUID of player Bodeman115 is f22a1207-e568-3976-bf72-f2bf1647e46a
+[17:27:06] [Server thread/INFO]: Bodeman115[/0:0:0:0:0:0:0:1%0:51820] logged in with entity id 1933 at ([world]-248.24861439987248, 88.0, 62.512854187822484)
+[17:27:11] [Craft Scheduler Thread - 20/INFO]: [AuthMe] Bodeman115 used the wrong password
+[17:27:11] [Server thread/INFO]: Bodeman115 lost connection: Wrong password!
+[17:27:11] [Server thread/INFO]: Bodeman115 left the game
+[17:27:11] [Server thread/WARN]: handleDisconnection() called twice
+[17:27:13] [User Authenticator #1/INFO]: UUID of player Bodeman115 is f22a1207-e568-3976-bf72-f2bf1647e46a
+[17:27:13] [Server thread/INFO]: Bodeman115[/0:0:0:0:0:0:0:1%0:36702] logged in with entity id 1967 at ([world]-248.24861439987248, 88.0, 62.512854187822484)
+[17:27:20] [Craft Scheduler Thread - 20/INFO]: [AuthMe] The user Bodeman115 has 33 accounts:
+[17:27:20] [Craft Scheduler Thread - 20/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:27:20] [Craft Scheduler Thread - 20/INFO]: [AuthMe] Bodeman115 logged in 0:0:0:0:0:0:0:1%0
+[17:27:23] [User Authenticator #1/INFO]: UUID of player Vigel is dbe2fa6d-53e1-3ae9-bc3a-0cb8cfe4e27d
+[17:27:23] [Server thread/INFO]: Vigel[/0:0:0:0:0:0:0:1%0:57814] logged in with entity id 2005 at ([world]-1047.699999988079, 74.0, -579.1563321307833)
+[17:27:31] [Server thread/WARN]: Cobalt moved wrongly!
+[17:27:32] [Async Chat Thread - #0/INFO]: <Bodeman115> imsooooooocool are you cheating?
+[17:27:32] [Craft Scheduler Thread - 21/INFO]: [AuthMe] The user Vigel has 33 accounts:
+[17:27:32] [Craft Scheduler Thread - 21/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:27:32] [Craft Scheduler Thread - 21/INFO]: [AuthMe] Vigel logged in 0:0:0:0:0:0:0:1%0
+[17:27:41] [User Authenticator #1/INFO]: UUID of player fingermesideways is 3b479229-9698-33f0-8029-b5163d41a1be
+[17:27:41] [Server thread/INFO]: fingermesideways[/0:0:0:0:0:0:0:1%0:58674] logged in with entity id 2087 at ([world]-700.9846114803344, 200.0, -1493.8790364708696)
+[17:27:47] [Craft Scheduler Thread - 23/INFO]: [AuthMe] The user fingermesideways has 33 accounts:
+[17:27:47] [Craft Scheduler Thread - 23/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:27:47] [Craft Scheduler Thread - 23/INFO]: [AuthMe] fingermesideways logged in 0:0:0:0:0:0:0:1%0
+[17:27:49] [Server thread/INFO]: leif_ lost connection: Disconnected
+[17:27:49] [Server thread/INFO]: leif_ left the game
+[17:27:56] [Server thread/INFO]: heny lost connection: Disconnected
+[17:27:56] [Server thread/INFO]: heny left the game
+[17:28:24] [User Authenticator #1/INFO]: UUID of player Raptor_thegreat_ is 96882d89-d545-3df3-8828-9d3dffa12320
+[17:28:24] [Server thread/INFO]: Raptor_thegreat_[/0:0:0:0:0:0:0:1%0:52510] logged in with entity id 2196 at ([world]340.62977881916197, 64.0, 723.8141427301147)
+[17:28:34] [Server thread/INFO]: Raptor_thegreat_ lost connection: Disconnected
+[17:28:34] [Server thread/INFO]: Raptor_thegreat_ left the game
+[17:28:37] [Server thread/INFO]: Cobalt drowned
+[17:29:12] [Server thread/INFO]: imsooooooocool issued server command: /tpa Cobalt
+[17:29:17] [Server thread/INFO]: Cobalt issued server command: /tpdeny
+[17:29:17] [Server thread/INFO]: Bodeman115 lost connection: Timed out
+[17:29:17] [Server thread/INFO]: Bodeman115 left the game
+[17:30:27] [User Authenticator #2/INFO]: UUID of player owen_severson is 6f68e2bb-77c0-3227-83e5-2f1a6d3550f1
+[17:30:27] [Server thread/INFO]: owen_severson[/0:0:0:0:0:0:0:1%0:40806] logged in with entity id 2830 at ([world]-185.851184457276, 67.0, 27.699999988079043)
+[17:30:44] [Server thread/INFO]: Vigel has made the advancement [Suit Up]
+[17:30:54] [Server thread/INFO]: imsooooooocool lost connection: Timed out
+[17:30:54] [Server thread/INFO]: imsooooooocool left the game
+[17:30:57] [Server thread/INFO]: owen_severson lost connection: Login timeout exceeded, you have been kicked from the server, please try again!
+[17:30:57] [Server thread/INFO]: owen_severson left the game
+[17:30:57] [Server thread/WARN]: handleDisconnection() called twice
+[17:31:08] [User Authenticator #2/INFO]: UUID of player Bodeman115 is f22a1207-e568-3976-bf72-f2bf1647e46a
+[17:31:08] [Server thread/INFO]: Bodeman115[/0:0:0:0:0:0:0:1%0:50524] logged in with entity id 3284 at ([world]-248.12122552128278, 88.0, 61.52987438337312)
+[17:31:17] [Async Chat Thread - #1/INFO]: <Cobalt> b
+[17:31:18] [Craft Scheduler Thread - 46/INFO]: [AuthMe] The user Bodeman115 has 33 accounts:
+[17:31:18] [Craft Scheduler Thread - 46/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:31:18] [Craft Scheduler Thread - 46/INFO]: [AuthMe] Bodeman115 logged in 0:0:0:0:0:0:0:1%0
+[17:31:23] [User Authenticator #2/INFO]: UUID of player Dodecahedron is 5b31b327-76fc-30f9-a598-c81ce923231b
+[17:31:23] [Server thread/INFO]: Dodecahedron[/0:0:0:0:0:0:0:1%0:57184] logged in with entity id 3430 at ([world]-1140.874057991153, 64.0, 12.56641193895234)
+[17:31:32] [Craft Scheduler Thread - 48/INFO]: [AuthMe] The user Dodecahedron has 33 accounts:
+[17:31:32] [Craft Scheduler Thread - 48/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:31:32] [Craft Scheduler Thread - 48/INFO]: [AuthMe] Dodecahedron logged in 0:0:0:0:0:0:0:1%0
+[17:32:02] [Server thread/INFO]: Dodecahedron issued server command: /tpa vivy
+[17:32:06] [Server thread/INFO]: vivy issued server command: /tpaccept
+[17:32:41] [Async Chat Thread - #2/INFO]: <Cobalt> who took my iron and gold wtf
+[17:33:04] [Server thread/INFO]: Vigel has made the advancement [Isn't It Iron Pick]
+[17:33:05] [Async Chat Thread - #2/INFO]: <fingermesideways> idk i have some extra how much do u need
+[17:33:28] [Async Chat Thread - #2/INFO]: <Cobalt> someone took around 400 iron ingots from me
+[17:33:30] [User Authenticator #3/INFO]: UUID of player owen_severson is 6f68e2bb-77c0-3227-83e5-2f1a6d3550f1
+[17:33:30] [Server thread/INFO]: owen_severson[/0:0:0:0:0:0:0:1%0:57168] logged in with entity id 7558 at ([world]-185.851184457276, 67.0, 27.699999988079043)
+[17:33:40] [Craft Scheduler Thread - 61/INFO]: [AuthMe] The user owen_severson has 33 accounts:
+[17:33:40] [Craft Scheduler Thread - 61/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:33:40] [Craft Scheduler Thread - 61/INFO]: [AuthMe] owen_severson logged in 0:0:0:0:0:0:0:1%0
+[17:33:41] [User Authenticator #3/INFO]: UUID of player leif_ is 3751325d-0ee9-3ce7-8116-c5483ea98779
+[17:33:41] [Server thread/INFO]: leif_[/0:0:0:0:0:0:0:1%0:35292] logged in with entity id 8535 at ([world]-691.3470978056798, 200.0, -1486.5066160975791)
+[17:33:46] [Async Chat Thread - #2/INFO]: <Bodeman115> does anyone know your bace?
+[17:33:48] [Craft Scheduler Thread - 63/INFO]: [AuthMe] The user leif_ has 33 accounts:
+[17:33:48] [Craft Scheduler Thread - 63/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:33:48] [Craft Scheduler Thread - 63/INFO]: [AuthMe] leif_ logged in 0:0:0:0:0:0:0:1%0
+[17:33:53] [Async Chat Thread - #2/INFO]: <Cobalt> keagan does
+[17:34:07] [Async Chat Thread - #2/INFO]: <owen_severson> i do
+[17:34:09] [Async Chat Thread - #2/INFO]: <Cobalt> what
+[17:34:09] [Async Chat Thread - #2/INFO]: <Bodeman115> welp
+[17:34:10] [Async Chat Thread - #2/INFO]: <Cobalt> how
+[17:34:27] [Server thread/INFO]: fingermesideways lost connection: Disconnected
+[17:34:27] [Server thread/INFO]: fingermesideways left the game
+[17:34:36] [User Authenticator #3/INFO]: UUID of player Raptor_thegreat_ is 96882d89-d545-3df3-8828-9d3dffa12320
+[17:34:36] [Server thread/INFO]: Raptor_thegreat_[/0:0:0:0:0:0:0:1%0:48590] logged in with entity id 13357 at ([world]340.62977881916197, 64.0, 723.8141427301147)
+[17:34:53] [Async Chat Thread - #2/INFO]: <Dodecahedron> ew
+[17:34:54] [Craft Scheduler Thread - 70/INFO]: [AuthMe] The user Raptor_thegreat_ has 33 accounts:
+[17:34:54] [Craft Scheduler Thread - 70/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, Raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:34:54] [Craft Scheduler Thread - 70/INFO]: [AuthMe] Raptor_thegreat_ logged in 0:0:0:0:0:0:0:1%0
+[17:35:03] [Async Chat Thread - #2/INFO]: <Bodeman115> i am yet to find iron
+[17:35:07] [Server thread/INFO]: Raptor_thegreat_ lost connection: Disconnected
+[17:35:07] [Server thread/INFO]: Raptor_thegreat_ left the game
+[17:35:10] [Async Chat Thread - #2/INFO]: <Bodeman115> nvm
+[17:35:12] [User Authenticator #3/INFO]: UUID of player imsooooooocool is f88c5ac0-6429-38c6-b7b0-80921b55c676
+[17:35:12] [Server thread/INFO]: imsooooooocool[/0:0:0:0:0:0:0:1%0:55500] logged in with entity id 16411 at ([world]-155.28939466422872, 73.0, -129.0645670107022)
+[17:35:26] [Craft Scheduler Thread - 74/INFO]: [AuthMe] The user imsooooooocool has 33 accounts:
+[17:35:26] [Craft Scheduler Thread - 74/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:35:26] [Craft Scheduler Thread - 74/INFO]: [AuthMe] imsooooooocool logged in 0:0:0:0:0:0:0:1%0
+[17:37:58] [Server thread/INFO]: leif_ issued server command: /tpa skibidi_toilet
+[17:38:03] [Server thread/INFO]: leif_ lost connection: Disconnected
+[17:38:03] [Server thread/INFO]: leif_ left the game
+[17:39:18] [Craft Scheduler Thread - 101/WARN]: [Vault] Plugin Vault v1.2.27-b349 generated an exception while executing task 3
+java.lang.NoSuchMethodError: 'org.bukkit.entity.Player[] org.bukkit.Server.getOnlinePlayers()'
+	at net.milkbowl.vault.Metrics.postPlugin(Metrics.java:387) ~[?:?]
+	at net.milkbowl.vault.Metrics.access$400(Metrics.java:63) ~[?:?]
+	at net.milkbowl.vault.Metrics$4.run(Metrics.java:275) ~[?:?]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftTask.run(CraftTask.java:64) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:52) ~[patched_1.12.2.jar:git-Paper-1620]
+	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22) ~[patched_1.12.2.jar:git-Paper-1620]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+[17:40:20] [Server thread/INFO]: Vigel was slain by vivy
+[17:40:21] [Server thread/INFO]: vivy has made the advancement [Suit Up]
+[17:40:35] [Server thread/INFO]: Vigel issued server command: /tpa vivy
+[17:40:40] [Server thread/INFO]: vivy issued server command: /tp accept
+[17:40:43] [User Authenticator #4/INFO]: UUID of player leif_ is 3751325d-0ee9-3ce7-8116-c5483ea98779
+[17:40:43] [Server thread/INFO]: leif_[/0:0:0:0:0:0:0:1%0:33308] logged in with entity id 23937 at ([world]-726.4760778528615, 68.0, -1468.8747416234528)
+[17:40:44] [Server thread/INFO]: vivy issued server command: /tpaccept
+[17:40:52] [Craft Scheduler Thread - 113/INFO]: [AuthMe] The user leif_ has 33 accounts:
+[17:40:52] [Craft Scheduler Thread - 113/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:40:52] [Craft Scheduler Thread - 113/INFO]: [AuthMe] leif_ logged in 0:0:0:0:0:0:0:1%0
+[17:40:53] [User Authenticator #4/INFO]: UUID of player skibidi_toilet is fc9742a0-1735-33aa-aa6c-ca922990afa9
+[17:40:53] [Server thread/INFO]: skibidi_toilet[/0:0:0:0:0:0:0:1%0:37906] logged in with entity id 24131 at ([world]601.0004039646019, 64.0, 1058.0798675572366)
+[17:41:02] [Async Chat Thread - #3/INFO]: <Cobalt> keagan someone took all my iron and gold
+[17:41:02] [Server thread/INFO]: leif_ issued server command: /tpa skibidi_toilet
+[17:41:03] [User Authenticator #4/INFO]: UUID of player Raptor_thegreat_ is 96882d89-d545-3df3-8828-9d3dffa12320
+[17:41:03] [Server thread/INFO]: Raptor_thegreat_[/0:0:0:0:0:0:0:1%0:37194] logged in with entity id 24270 at ([world]340.62977881916197, 64.0, 723.8141427301147)
+[17:41:12] [Craft Scheduler Thread - 115/INFO]: [AuthMe] The user Raptor_thegreat_ has 33 accounts:
+[17:41:12] [Craft Scheduler Thread - 115/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, Raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:41:12] [Craft Scheduler Thread - 115/INFO]: [AuthMe] Raptor_thegreat_ logged in 0:0:0:0:0:0:0:1%0
+[17:41:15] [Server thread/INFO]: skibidi_toilet issued server command: /tpaccept
+[17:41:17] [Async Chat Thread - #3/INFO]: <imsooooooocool> no worries i didnt
+[17:41:20] [Craft Scheduler Thread - 116/INFO]: [AuthMe] The user skibidi_toilet has 33 accounts:
+[17:41:20] [Craft Scheduler Thread - 116/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, Raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:41:20] [Craft Scheduler Thread - 116/INFO]: [AuthMe] skibidi_toilet logged in 0:0:0:0:0:0:0:1%0
+[17:41:23] [Server thread/INFO]: skibidi_toilet issued server command: /tpaccept
+[17:41:33] [Server thread/INFO]: vivy has made the advancement [Sweet dreams]
+[17:41:38] [Server thread/INFO]: Vigel has made the advancement [Sweet dreams]
+[17:42:03] [Server thread/INFO]: imsooooooocool issued server command: /tpa vigel
+[17:42:12] [Server thread/INFO]: Vigel issued server command: /tpdeny
+[17:42:16] [Async Chat Thread - #3/INFO]: <imsooooooocool> can someone give me food
+[17:42:19] [Server thread/INFO]: Raptor_thegreat_ lost connection: Disconnected
+[17:42:19] [Server thread/INFO]: Raptor_thegreat_ left the game
+[17:42:25] [User Authenticator #5/INFO]: UUID of player heny is 56025289-c85c-3a4d-9153-a0a5552d8fd6
+[17:42:25] [Server thread/INFO]: heny[/0:0:0:0:0:0:0:1%0:54416] logged in with entity id 24773 at ([world]-439.30000001192093, 18.0, -103.44463717040445)
+[17:42:28] [Craft Scheduler Thread - 124/INFO]: [AuthMe] The user heny has 33 accounts:
+[17:42:28] [Craft Scheduler Thread - 124/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:42:28] [Craft Scheduler Thread - 124/INFO]: [AuthMe] heny logged in 0:0:0:0:0:0:0:1%0
+[17:42:35] [Server thread/INFO]: imsooooooocool issued server command: /tpa skibidi toilet
+[17:42:52] [Server thread/INFO]: heny lost connection: Disconnected
+[17:42:52] [Server thread/INFO]: heny left the game
+[17:43:04] [Server thread/INFO]: skibidi_toilet issued server command: /tpdeny
+[17:43:12] [Server thread/INFO]: Dodecahedron has made the advancement [Sweet dreams]
+[17:43:25] [Server thread/INFO]: Vigel was slain by vivy
+[17:43:32] [Server thread/INFO]: imsooooooocool issued server command: /tpa owen severson
+[17:43:39] [Async Chat Thread - #4/INFO]: <vivy> consentual
+[17:43:51] [Async Chat Thread - #4/INFO]: <Vigel> Indeed.
+[17:43:53] [Async Chat Thread - #4/INFO]: <imsooooooocool> someone please give me food
+[17:44:01] [Async Chat Thread - #4/INFO]: <Bodeman115> go get some
+[17:44:08] [Async Chat Thread - #4/INFO]: <vivy> i have to support a family of 4 i cant sorry
+[17:44:10] [Async Chat Thread - #4/INFO]: <imsooooooocool> i have 18 sugercane to my name
+[17:44:15] [Async Chat Thread - #4/INFO]: <imsooooooocool> ill do anything
+[17:44:18] [User Authenticator #6/INFO]: UUID of player heny is 56025289-c85c-3a4d-9153-a0a5552d8fd6
+[17:44:18] [Server thread/INFO]: heny[/0:0:0:0:0:0:0:1%0:60748] logged in with entity id 29680 at ([world]-439.30000001192093, 18.0, -103.44463717040445)
+[17:44:22] [Craft Scheduler Thread - 135/INFO]: [AuthMe] The user heny has 33 accounts:
+[17:44:22] [Craft Scheduler Thread - 135/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:44:22] [Craft Scheduler Thread - 135/INFO]: [AuthMe] heny logged in 0:0:0:0:0:0:0:1%0
+[17:44:24] [Async Chat Thread - #4/INFO]: <Bodeman115> go out and explor
+[17:44:26] [Server thread/INFO]: heny issued server command: /tpa own
+[17:44:32] [Server thread/INFO]: heny issued server command: /tpa owen
+[17:44:39] [Async Chat Thread - #4/INFO]: <heny> im stuck in cave
+[17:44:45] [Async Chat Thread - #4/INFO]: <heny> please help
+[17:44:46] [Async Chat Thread - #4/INFO]: <Bodeman115> ok
+[17:44:49] [Server thread/INFO]: imsooooooocool issued server command: /tpa heny
+[17:44:56] [Server thread/INFO]: heny issued server command: /tpa bodeman115
+[17:45:06] [Server thread/INFO]: imsooooooocool issued server command: /tpa bodeman115
+[17:45:10] [Async Chat Thread - #4/INFO]: <Bodeman115> tpaccept
+[17:45:14] [Async Chat Thread - #4/INFO]: <heny> nice
+[17:45:15] [Server thread/INFO]: Bodeman115 issued server command: /tpaccept
+[17:45:22] [Async Chat Thread - #4/INFO]: <imsooooooocool> heny i have so much stuff to give yu
+[17:45:29] [Async Chat Thread - #4/INFO]: <heny> ok
+[17:45:32] [Async Chat Thread - #4/INFO]: <imsooooooocool> 18 sugercane
+[17:45:35] [Async Chat Thread - #4/INFO]: <Bodeman115> nice bace right?
+[17:45:37] [Async Chat Thread - #4/INFO]: <heny> yes
+[17:45:47] [Server thread/INFO]: heny issued server command: /w bodeman115 should i let imsocool tpa here
+[17:45:48] [Async Chat Thread - #4/INFO]: <imsooooooocool> can i hae leather
+[17:46:02] [Async Chat Thread - #4/INFO]: <Bodeman115> if you want
+[17:46:08] [Server thread/INFO]: heny issued server command: /tpaccept
+[17:46:12] [Async Chat Thread - #4/INFO]: <imsooooooocool> hi
+[17:46:14] [Server thread/INFO]: imsooooooocool fell from a high place
+[17:46:17] [Async Chat Thread - #4/INFO]: <Bodeman115> lol
+[17:46:21] [Async Chat Thread - #4/INFO]: <leif_> BAHAHAHAHA
+[17:46:23] [Async Chat Thread - #4/INFO]: <leif_> loser
+[17:46:24] [Async Chat Thread - #4/INFO]: <imsooooooocool> grr
+[17:46:29] [Async Chat Thread - #4/INFO]: <vivy> hey god do you accept prayers
+[17:46:31] [Async Chat Thread - #4/INFO]: <heny> well
+[17:46:34] [Async Chat Thread - #4/INFO]: <Bodeman115> all you do is beg and wine
+[17:46:40] [Async Chat Thread - #4/INFO]: <imsooooooocool> you guys helped me
+[17:46:40] [Async Chat Thread - #4/INFO]: <heny> see ya
+[17:46:53] [Server thread/INFO]: imsooooooocool has made the advancement [Stone Age]
+[17:46:59] [Async Chat Thread - #4/INFO]: <Bodeman115> WAHT
+[17:47:03] [Async Chat Thread - #4/INFO]: <Bodeman115> you suck
+[17:47:04] [Async Chat Thread - #4/INFO]: <heny> what
+[17:47:06] [Server thread/INFO]: vivy was shot by Skeleton
+[17:47:09] [Async Chat Thread - #4/INFO]: <heny> oop
+[17:47:16] [Async Chat Thread - #4/INFO]: <vivy> yeowch
+[17:47:18] [Async Chat Thread - #4/INFO]: <Bodeman115> we shuld all sleep
+[17:47:33] [Server thread/INFO]: heny issued server command: /tpa bodeman115
+[17:47:46] [Async Chat Thread - #4/INFO]: <Bodeman115> why hen
+[17:47:50] [Async Chat Thread - #4/INFO]: <heny> im stuck again
+[17:47:53] [Server thread/INFO]: imsooooooocool has made the advancement [Acquire Hardware]
+[17:48:00] [Async Chat Thread - #4/INFO]: <Bodeman115> you like 20 blocks away
+[17:48:10] [Async Chat Thread - #4/INFO]: <heny> i know
+[17:48:13] [Server thread/INFO]: Bodeman115 issued server command: /tpaccept
+[17:48:19] [Async Chat Thread - #4/INFO]: <heny> but there was a revine and i fell in
+[17:48:35] [Async Chat Thread - #4/INFO]: <vivy> hey god can i have cows
+[17:48:59] [Server thread/INFO]: [Server] i am god and i say no
+[17:49:03] [Async Chat Thread - #4/INFO]: <vivy> aw shucks
+[17:49:04] [Async Chat Thread - #4/INFO]: <Cobalt> why would god give u cows in minecraft
+[17:49:17] [Async Chat Thread - #4/INFO]: <vivy> i mean why not
+[17:49:19] [Async Chat Thread - #4/INFO]: <Bodeman115> he is a nice guy
+[17:49:34] [Async Chat Thread - #4/INFO]: <skibidi_toilet> who is near spawn?
+[17:49:51] [Async Chat Thread - #4/INFO]: <Bodeman115> me
+[17:49:56] [Server thread/INFO]: owen_severson hit the ground too hard
+[17:50:33] [Async Chat Thread - #4/INFO]: <skibidi_toilet> is anyone in a spruce area
+[17:50:37] [Async Chat Thread - #4/INFO]: <imsooooooocool> me
+[17:50:49] [Server thread/INFO]: skibidi_toilet issued server command: /tpa imsooooooocool
+[17:51:22] [Server thread/INFO]: imsooooooocool issued server command: /tpa heny
+[17:51:32] [Server thread/INFO]: heny issued server command: /tpaccept
+[17:51:37] [Async Chat Thread - #5/INFO]: <imsooooooocool> hi
+[17:51:37] [Server thread/INFO]: owen_severson went up in flames
+[17:51:40] [Async Chat Thread - #5/INFO]: <heny> hi
+[17:51:42] [Server thread/INFO]: Bodeman115 issued server command: /save
+[17:51:46] [Async Chat Thread - #5/INFO]: <imsooooooocool> I DONT HAVE A PIC
+[17:51:49] [Async Chat Thread - #5/INFO]: <owen_severson> sup
+[17:51:54] [Async Chat Thread - #5/INFO]: <imsooooooocool> help
+[17:51:57] [Server thread/INFO]: skibidi_toilet issued server command: /tpa owen_severson
+[17:52:04] [Async Chat Thread - #5/INFO]: <imsooooooocool> -460 -112
+[17:52:05] [Server thread/INFO]: owen_severson issued server command: /tpaccept
+[17:52:07] [Async Chat Thread - #5/INFO]: <Cobalt> bro no one is going to help you
+[17:52:13] [Async Chat Thread - #5/INFO]: <imsooooooocool> helpppp
+[17:52:15] [Async Chat Thread - #5/INFO]: <Cobalt> just mine your way out of wherever you are
+[17:52:15] [Async Chat Thread - #5/INFO]: <skibidi_toilet> owen wtf
+[17:52:18] [Async Chat Thread - #5/INFO]: <Cobalt> stop complaining
+[17:52:20] [User Authenticator #7/INFO]: UUID of player Lebron_bathwater is a7b40030-9ab6-31e5-91b7-8a9ddaca035e
+[17:52:20] [Server thread/INFO]: Lebron_bathwater[/0:0:0:0:0:0:0:1%0:37070] logged in with entity id 53247 at ([world]265.6741670250433, 18.0, 543.6832968613173)
+[17:52:30] [Async Chat Thread - #5/INFO]: <owen_severson> what do you mean
+[17:52:38] [Server thread/INFO]: imsooooooocool issued server command: /tpa owen severson
+[17:52:46] [Server thread/INFO]: owen_severson issued server command: /tpaccept
+[17:52:46] [Async Chat Thread - #5/INFO]: <imsooooooocool> pleae owen
+[17:52:50] [Server thread/INFO]: Lebron_bathwater lost connection: Login timeout exceeded, you have been kicked from the server, please try again!
+[17:52:50] [Server thread/INFO]: Lebron_bathwater left the game
+[17:52:50] [Server thread/WARN]: handleDisconnection() called twice
+[17:52:51] [Async Chat Thread - #5/INFO]: <imsooooooocool> thank
+[17:52:57] [User Authenticator #7/INFO]: UUID of player Lebron_bathwater is a7b40030-9ab6-31e5-91b7-8a9ddaca035e
+[17:52:57] [Server thread/INFO]: Lebron_bathwater[/0:0:0:0:0:0:0:1%0:53648] logged in with entity id 53604 at ([world]265.6741670250433, 18.0, 543.6832968613173)
+[17:52:58] [Async Chat Thread - #5/INFO]: <imsooooooocool> kill me own
+[17:53:27] [Server thread/INFO]: Lebron_bathwater lost connection: Login timeout exceeded, you have been kicked from the server, please try again!
+[17:53:27] [Server thread/INFO]: Lebron_bathwater left the game
+[17:53:27] [Server thread/WARN]: handleDisconnection() called twice
+[17:53:47] [Server thread/INFO]: Bodeman115 lost connection: Disconnected
+[17:53:47] [Server thread/INFO]: Bodeman115 left the game
+[17:54:03] [User Authenticator #8/INFO]: UUID of player Lebron_bathwater is a7b40030-9ab6-31e5-91b7-8a9ddaca035e
+[17:54:03] [Server thread/INFO]: Lebron_bathwater[/0:0:0:0:0:0:0:1%0:41826] logged in with entity id 56323 at ([world]266.0255719712529, 18.0, 543.5306081749158)
+[17:54:06] [Server thread/INFO]: leif_ lost connection: Disconnected
+[17:54:06] [Server thread/INFO]: leif_ left the game
+[17:54:20] [Craft Scheduler Thread - 205/WARN]: [Vault] Plugin Vault v1.2.27-b349 generated an exception while executing task 3
+java.lang.NoSuchMethodError: 'org.bukkit.entity.Player[] org.bukkit.Server.getOnlinePlayers()'
+	at net.milkbowl.vault.Metrics.postPlugin(Metrics.java:387) ~[?:?]
+	at net.milkbowl.vault.Metrics.access$400(Metrics.java:63) ~[?:?]
+	at net.milkbowl.vault.Metrics$4.run(Metrics.java:275) ~[?:?]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftTask.run(CraftTask.java:64) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:52) ~[patched_1.12.2.jar:git-Paper-1620]
+	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22) ~[patched_1.12.2.jar:git-Paper-1620]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+[17:54:33] [Server thread/INFO]: Lebron_bathwater lost connection: Login timeout exceeded, you have been kicked from the server, please try again!
+[17:54:33] [Server thread/INFO]: Lebron_bathwater left the game
+[17:54:34] [Server thread/WARN]: handleDisconnection() called twice
+[17:54:36] [User Authenticator #8/INFO]: UUID of player leif_ is 3751325d-0ee9-3ce7-8116-c5483ea98779
+[17:54:36] [Server thread/INFO]: leif_[/0:0:0:0:0:0:0:1%0:52426] logged in with entity id 57813 at ([world]605.2553236358583, 64.0, 1060.9505944908715)
+[17:54:38] [Server thread/INFO]: heny lost connection: Timed out
+[17:54:38] [Server thread/INFO]: heny left the game
+[17:54:42] [Server thread/INFO]: skibidi_toilet issued server command: /tpa leif_
+[17:54:42] [Server thread/INFO]: Vigel has made the advancement [A Seedy Place]
+[17:54:45] [Craft Scheduler Thread - 208/INFO]: [AuthMe] The user leif_ has 33 accounts:
+[17:54:45] [Craft Scheduler Thread - 208/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:54:45] [Craft Scheduler Thread - 208/INFO]: [AuthMe] leif_ logged in 0:0:0:0:0:0:0:1%0
+[17:54:47] [Server thread/INFO]: leif_ issued server command: /tpaccept
+[17:55:48] [User Authenticator #9/INFO]: UUID of player heny is 56025289-c85c-3a4d-9153-a0a5552d8fd6
+[17:55:48] [Server thread/INFO]: heny[/0:0:0:0:0:0:0:1%0:55838] logged in with entity id 58412 at ([world]-460.420018276176, 47.0, -142.5706746533088)
+[17:55:51] [Craft Scheduler Thread - 215/INFO]: [AuthMe] The user heny has 33 accounts:
+[17:55:51] [Craft Scheduler Thread - 215/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:55:51] [Craft Scheduler Thread - 215/INFO]: [AuthMe] heny logged in 0:0:0:0:0:0:0:1%0
+[17:56:25] [User Authenticator #9/INFO]: UUID of player Bodeman115 is f22a1207-e568-3976-bf72-f2bf1647e46a
+[17:56:25] [Server thread/INFO]: Bodeman115[/0:0:0:0:0:0:0:1%0:53180] logged in with entity id 58688 at ([world]-279.10572680243, 88.0, 56.24333284979792)
+[17:56:34] [Craft Scheduler Thread - 221/INFO]: [AuthMe] Bodeman115 used the wrong password
+[17:56:34] [Server thread/INFO]: Bodeman115 lost connection: Wrong password!
+[17:56:34] [Server thread/INFO]: Bodeman115 left the game
+[17:56:34] [Server thread/WARN]: handleDisconnection() called twice
+[17:56:36] [User Authenticator #9/INFO]: UUID of player Bodeman115 is f22a1207-e568-3976-bf72-f2bf1647e46a
+[17:56:36] [Server thread/INFO]: Bodeman115[/0:0:0:0:0:0:0:1%0:43930] logged in with entity id 58996 at ([world]-279.10572680243, 88.0, 56.24333284979792)
+[17:56:42] [Craft Scheduler Thread - 220/INFO]: [AuthMe] The user Bodeman115 has 33 accounts:
+[17:56:42] [Craft Scheduler Thread - 220/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[17:56:42] [Craft Scheduler Thread - 220/INFO]: [AuthMe] Bodeman115 logged in 0:0:0:0:0:0:0:1%0
+[17:56:42] [Async Chat Thread - #6/INFO]: <imsooooooocool> hi bodie
+[17:56:47] [Async Chat Thread - #6/INFO]: <imsooooooocool> when can i get leather
+[17:56:55] [Async Chat Thread - #6/INFO]: <Cobalt> just kill a cow
+[17:57:05] [Async Chat Thread - #6/INFO]: <imsooooooocool> im a vegan
+[17:57:08] [Async Chat Thread - #6/INFO]: <Cobalt> sybau
+[17:57:13] [Async Chat Thread - #6/INFO]: <Bodeman115> imsoooooocool i dont even know you
+[17:57:17] [Async Chat Thread - #6/INFO]: <Cobalt> go kill a cow to get leather or stop begging
+[17:57:17] [Async Chat Thread - #6/INFO]: <imsooooooocool> woah lets calm down
+[17:57:25] [Async Chat Thread - #6/INFO]: <Cobalt> no u need to stfu
+[17:57:29] [Async Chat Thread - #6/INFO]: <Cobalt> its annoying now
+[17:57:31] [Async Chat Thread - #6/INFO]: <imsooooooocool> calm
+[17:57:33] [Async Chat Thread - #6/INFO]: <Bodeman115> fr
+[17:57:36] [Async Chat Thread - #6/INFO]: <Cobalt> you've been begging and whining for so long its stupid
+[17:57:37] [Async Chat Thread - #6/INFO]: <imsooooooocool> just breath
+[17:57:40] [Async Chat Thread - #6/INFO]: <Cobalt> bro stfu
+[17:57:44] [Server thread/INFO]: heny issued server command: /tpa de
+[17:57:46] [Async Chat Thread - #6/INFO]: <imsooooooocool> im not begging
+[17:57:49] [Server thread/INFO]: heny issued server command: /tpa dode
+[17:57:49] [Async Chat Thread - #6/INFO]: <Cobalt> u are
+[17:57:50] [Async Chat Thread - #6/INFO]: <imsooooooocool> its asking a lot
+[17:57:52] [Async Chat Thread - #6/INFO]: <vivy> chillax its minecraft
+[17:57:52] [Async Chat Thread - #6/INFO]: <skibidi_toilet> i have 6 i can give you
+[17:57:52] [Async Chat Thread - #6/INFO]: <heny> brady please
+[17:57:55] [Async Chat Thread - #6/INFO]: <heny> i wont kill
+[17:58:04] [Async Chat Thread - #6/INFO]: <Cobalt> vivy its not about that
+[17:58:05] [Async Chat Thread - #6/INFO]: <heny> im stuck in cave and no way out
+[17:58:11] [Async Chat Thread - #6/INFO]: <imsooooooocool> haha
+[17:58:13] [Async Chat Thread - #6/INFO]: <Cobalt> this mf is just being annoying for 0 reason
+[17:58:17] [Server thread/INFO]: Dodecahedron issued server command: /tpaccept
+[17:58:23] [Async Chat Thread - #6/INFO]: <heny> oh
+[17:58:26] [Async Chat Thread - #6/INFO]: <Bodeman115> heny tp to me
+[17:58:31] [Async Chat Thread - #6/INFO]: <heny> you in cave to
+[17:58:39] [Async Chat Thread - #6/INFO]: <Bodeman115> i am?
+[17:58:40] [Async Chat Thread - #6/INFO]: <heny> brady do you have wood
+[17:58:40] [Async Chat Thread - #6/INFO]: <vivy> henry just tp to me
+[17:58:41] [Async Chat Thread - #6/INFO]: <owen_severson> brady tp me
+[17:58:44] [Async Chat Thread - #6/INFO]: <Dodecahedron> no
+[17:58:44] [Server thread/INFO]: imsooooooocool issued server command: /tpa bpdeman115
+[17:58:50] [Async Chat Thread - #6/INFO]: <vivy> im outside
+[17:58:54] [Async Chat Thread - #6/INFO]: <Bodeman115> so am i
+[17:58:56] [Async Chat Thread - #6/INFO]: <owen_severson> then dont
+[17:59:00] [Async Chat Thread - #6/INFO]: <vivy> just tp whoever
+[17:59:01] [Server thread/INFO]: imsooooooocool issued server command: /tpa Bodeman115
+[17:59:20] [Server thread/INFO]: Bodeman115 issued server command: /tpaccept
+[17:59:29] [Server thread/INFO]: owen_severson issued server command: /tps
+[17:59:32] [Async Chat Thread - #6/INFO]: <imsooooooocool> i survie
+[17:59:46] [Server thread/INFO]: vivy issued server command: /whisper heny wanna join our team
+[17:59:48] [Async Chat Thread - #6/INFO]: <heny> shoot
+[17:59:48] [Async Chat Thread - #6/INFO]: <imsooooooocool> i am peace
+[17:59:52] [Async Chat Thread - #6/INFO]: <heny> my pic broke
+[17:59:54] [Async Chat Thread - #6/INFO]: <imsooooooocool> hi owne
+[17:59:54] [Async Chat Thread - #6/INFO]: <owen_severson> ok
+[17:59:57] [Server thread/INFO]: imsooooooocool was slain by Bodeman115
+[17:59:58] [Server thread/INFO]: heny issued server command: /tpa owen
+[17:59:59] [Server thread/INFO]: vivy issued server command: /w heny wanna join our team
+[18:00:01] [Server thread/INFO]: skibidi_toilet lost connection: Disconnected
+[18:00:01] [Server thread/INFO]: skibidi_toilet left the game
+[18:00:06] [Server thread/INFO]: owen_severson issued server command: /tpaccept
+[18:00:08] [Async Chat Thread - #6/INFO]: <imsooooooocool> owen get revenge for m
+[18:00:10] [Server thread/INFO]: heny issued server command: /w vivy who is on it
+[18:00:16] [Async Chat Thread - #6/INFO]: <heny> thank you own
+[18:00:18] [Async Chat Thread - #6/INFO]: <owen_severson> ok
+[18:00:20] [Async Chat Thread - #6/INFO]: <heny> owen
+[18:00:20] [Server thread/INFO]: Vigel has made the advancement [The Parrots and the Bats]
+[18:00:25] [Async Chat Thread - #6/INFO]: <heny> here is your payment'
+[18:00:25] [Async Chat Thread - #6/INFO]: <owen_severson> yes
+[18:00:37] [Async Chat Thread - #6/INFO]: <owen_severson> thank you
+[18:00:37] [Server thread/INFO]: Dodecahedron issued server command: /tpa vivy
+[18:00:37] [Server thread/INFO]: vivy issued server command: /w heny me leo mason and an unspecified person who will be revealed if u join
+[18:00:41] [Server thread/INFO]: vivy issued server command: /tpaccept
+[18:00:53] [Server thread/INFO]: heny issued server command: /w vivy hmm
+[18:01:00] [Server thread/INFO]: vivy issued server command: /w heny its not leif we dont like leif
+[18:01:09] [Async Chat Thread - #6/INFO]: <imsooooooocool> bodie
+[18:01:12] [Async Chat Thread - #6/INFO]: <imsooooooocool> leather pls
+[18:01:14] [Server thread/INFO]: heny issued server command: /w vivy ok yes leif is bad
+[18:01:16] [Async Chat Thread - #6/INFO]: <Bodeman115> there is no i
+[18:01:24] [Server thread/INFO]: owen_severson hit the ground too hard
+[18:01:27] [Server thread/INFO]: vivy issued server command: /w heny tp trust we are peaceful
+[18:01:30] [Async Chat Thread - #6/INFO]: <heny> um
+[18:02:17] [Async Chat Thread - #6/INFO]: <Bodeman115> good one
+[18:02:17] [Async Chat Thread - #6/INFO]: <heny> gtg
+[18:02:19] [Server thread/INFO]: heny lost connection: Disconnected
+[18:02:19] [Server thread/INFO]: heny left the game
+[18:03:06] [Server thread/INFO]: imsooooooocool has made the advancement [Hot Stuff]
+[18:06:03] [Server thread/INFO]: Bodeman115 issued server command: /tpahere
+[18:06:25] [User Authenticator #10/INFO]: UUID of player heny is 56025289-c85c-3a4d-9153-a0a5552d8fd6
+[18:06:26] [Server thread/INFO]: heny[/0:0:0:0:0:0:0:1%0:37588] logged in with entity id 63653 at ([world]-244.24597904680894, 67.0, 53.07633281597773)
+[18:06:32] [Async Chat Thread - #7/INFO]: <imsooooooocool> hi heny
+[18:06:33] [Craft Scheduler Thread - 291/INFO]: [AuthMe] The user heny has 33 accounts:
+[18:06:33] [Craft Scheduler Thread - 291/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, Bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[18:06:33] [Craft Scheduler Thread - 291/INFO]: [AuthMe] heny logged in 0:0:0:0:0:0:0:1%0
+[18:06:39] [Async Chat Thread - #7/INFO]: <heny> hi cool
+[18:06:47] [Server thread/INFO]: Bodeman115 fell from a high place
+[18:06:50] [Async Chat Thread - #7/INFO]: <leif_> hahahahaha
+[18:06:52] [Async Chat Thread - #7/INFO]: <Bodeman115> hey hen
+[18:06:57] [Async Chat Thread - #7/INFO]: <heny> uh hi
+[18:07:16] [Server thread/INFO]: owen_severson drowned
+[18:07:18] [Async Chat Thread - #7/INFO]: <Bodeman115> i did that so i cound get my hunger back
+[18:07:20] [Async Chat Thread - #7/INFO]: <leif_> hahahahah
+[18:07:23] [Async Chat Thread - #7/INFO]: <heny> oh good idea
+[18:07:38] [Async Chat Thread - #7/INFO]: <Bodeman115> so heny why are you scouting my bace
+[18:07:45] [Server thread/INFO]: leif_ issued server command: /tpa heny
+[18:07:52] [Async Chat Thread - #7/INFO]: <leif_> henry i think we should tema up
+[18:07:52] [Async Chat Thread - #7/INFO]: <heny> oh yeah let me accpet
+[18:07:53] [Server thread/INFO]: Bodeman115 issued server command: /admindun fakequit
+[18:08:03] [Server thread/INFO]: heny lost connection: Disconnected
+[18:08:03] [Server thread/INFO]: heny left the game
+[18:08:18] [Async Chat Thread - #7/INFO]: <vivy> leif i dont think we should team up
+[18:08:25] [Async Chat Thread - #7/INFO]: <leif_> y not
+[18:08:33] [Async Chat Thread - #7/INFO]: <vivy> ur evil
+[18:08:33] [Async Chat Thread - #7/INFO]: <Dodecahedron> that's mean
+[18:08:41] [Async Chat Thread - #7/INFO]: <leif_> ):
+[18:09:01] [Async Chat Thread - #7/INFO]: <Cobalt> yall jus jelous u aint as good at pvp as leif fr
+[18:09:07] [Server thread/INFO]: Bodeman115 lost connection: Disconnected
+[18:09:07] [Server thread/INFO]: Bodeman115 left the game
+[18:09:09] [Async Chat Thread - #7/INFO]: <Vigel> You shouldn't be that surprised you snake.
+[18:09:12] [Async Chat Thread - #7/INFO]: <vivy> dawg he killed me when i was broke
+[18:09:21] [Async Chat Thread - #7/INFO]: <vivy> crazy
+[18:09:24] [Craft Scheduler Thread - 312/WARN]: [Vault] Plugin Vault v1.2.27-b349 generated an exception while executing task 3
+java.lang.NoSuchMethodError: 'org.bukkit.entity.Player[] org.bukkit.Server.getOnlinePlayers()'
+	at net.milkbowl.vault.Metrics.postPlugin(Metrics.java:387) ~[?:?]
+	at net.milkbowl.vault.Metrics.access$400(Metrics.java:63) ~[?:?]
+	at net.milkbowl.vault.Metrics$4.run(Metrics.java:275) ~[?:?]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftTask.run(CraftTask.java:64) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:52) ~[patched_1.12.2.jar:git-Paper-1620]
+	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22) ~[patched_1.12.2.jar:git-Paper-1620]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+[18:09:24] [Async Chat Thread - #7/INFO]: <imsooooooocool> leif tp to me
+[18:09:24] [Async Chat Thread - #7/INFO]: <Cobalt> good
+[18:09:27] [Async Chat Thread - #7/INFO]: <leif_> skill issue
+[18:09:30] [Async Chat Thread - #7/INFO]: <leif_> get better
+[18:09:33] [Async Chat Thread - #7/INFO]: <imsooooooocool> i have a peace offering
+[18:09:34] [Async Chat Thread - #7/INFO]: <Cobalt> fr
+[18:09:39] [Async Chat Thread - #7/INFO]: <vivy> yeah buddy sure
+[18:09:47] [Async Chat Thread - #7/INFO]: <vivy> ill take that challenge
+[18:09:48] [Async Chat Thread - #7/INFO]: <Cobalt> this server has no rules btw
+[18:09:48] [Async Chat Thread - #7/INFO]: <imsooooooocool> leif i know u want it
+[18:09:51] [Async Chat Thread - #7/INFO]: <Vigel> Block parry dodge lookin ass.
+[18:09:53] [Async Chat Thread - #7/INFO]: <Dodecahedron> relax
+[18:10:02] [Server thread/INFO]: leif_ issued server command: /whisper cobalt Come to 596 48 1086
+[18:10:04] [Async Chat Thread - #7/INFO]: <Cobalt> why do u use periods in sentences
+[18:10:05] [Server thread/INFO]: leif_ issued server command: /whisper
+[18:10:06] [Server thread/INFO]: owen_severson fell from a high place
+[18:10:08] [Async Chat Thread - #7/INFO]: <imsooooooocool> leif tp to me
+[18:10:08] [Server thread/INFO]: leif_ issued server command: /help
+[18:10:13] [Async Chat Thread - #7/INFO]: <imsooooooocool> i ahve gift
+[18:10:16] [Server thread/INFO]: leif_ issued server command: /vault
+[18:10:24] [Async Chat Thread - #7/INFO]: <Cobalt> bsic grmer n 2025 </3
+[18:10:32] [Async Chat Thread - #7/INFO]: <Cobalt> w spk lk ts nw
+[18:10:37] [User Authenticator #11/INFO]: UUID of player Lebron_bathwater is a7b40030-9ab6-31e5-91b7-8a9ddaca035e
+[18:10:37] [Server thread/INFO]: Lebron_bathwater[/0:0:0:0:0:0:0:1%0:35948] logged in with entity id 65002 at ([world]267.0108067678486, 18.0, 543.5873951294695)
+[18:10:45] [Craft Scheduler Thread - 321/INFO]: [AuthMe] The user Lebron_bathwater has 33 accounts:
+[18:10:45] [Craft Scheduler Thread - 321/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, Lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[18:10:45] [Craft Scheduler Thread - 321/INFO]: [AuthMe] Lebron_bathwater logged in 0:0:0:0:0:0:0:1%0
+[18:10:48] [Server thread/INFO]: Vigel lost connection: Disconnected
+[18:10:48] [Server thread/INFO]: Vigel left the game
+[18:10:56] [User Authenticator #11/INFO]: UUID of player Vigel is dbe2fa6d-53e1-3ae9-bc3a-0cb8cfe4e27d
+[18:10:56] [Server thread/INFO]: Vigel[/0:0:0:0:0:0:0:1%0:35318] logged in with entity id 65271 at ([world]-1863.9997764783438, 86.0, -281.65690778813644)
+[18:11:00] [Server thread/INFO]: vivy lost connection: Disconnected
+[18:11:00] [Server thread/INFO]: vivy left the game
+[18:11:04] [Craft Scheduler Thread - 324/INFO]: [AuthMe] The user Vigel has 33 accounts:
+[18:11:04] [Craft Scheduler Thread - 324/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, Lebron_bathwater, Vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[18:11:04] [Craft Scheduler Thread - 324/INFO]: [AuthMe] Vigel logged in 0:0:0:0:0:0:0:1%0
+[18:11:11] [Async Chat Thread - #7/INFO]: <imsooooooocool> leif i have sooo many diamonds
+[18:11:17] [Async Chat Thread - #7/INFO]: <leif_> nice
+[18:11:19] [Server thread/INFO]: owen_severson lost connection: Disconnected
+[18:11:19] [Server thread/INFO]: owen_severson left the game
+[18:11:22] [Async Chat Thread - #7/INFO]: <leif_> i also have quite a few
+[18:11:24] [Async Chat Thread - #7/INFO]: <imsooooooocool> i know u want some
+[18:11:28] [Async Chat Thread - #7/INFO]: <leif_> 3 stacks to be honest
+[18:11:32] [Async Chat Thread - #7/INFO]: <imsooooooocool> i have 5 stack tbh
+[18:11:36] [Async Chat Thread - #7/INFO]: <imsooooooocool> i give 1
+[18:11:40] [Async Chat Thread - #7/INFO]: <Cobalt> why u lying imsoooocool
+[18:11:41] [Async Chat Thread - #7/INFO]: <imsooooooocool> for peace
+[18:11:42] [Async Chat Thread - #7/INFO]: <leif_> tpa to me them
+[18:11:45] [Async Chat Thread - #7/INFO]: <Cobalt> like u aint gon slime out leif
+[18:11:51] [Async Chat Thread - #7/INFO]: <imsooooooocool> tp to me
+[18:11:57] [Async Chat Thread - #7/INFO]: <Cobalt> leif has full enchanted diamond armor fr
+[18:11:59] [Async Chat Thread - #7/INFO]: <Lebron_bathwater> where is daniel
+[18:12:00] [Async Chat Thread - #7/INFO]: <leif_> naw
+[18:12:07] [Async Chat Thread - #7/INFO]: <leif_> im not taking any chances
+[18:12:15] [Server thread/INFO]: Vigel lost connection: Disconnected
+[18:12:15] [Server thread/INFO]: Vigel left the game
+[18:12:15] [Async Chat Thread - #7/INFO]: <Cobalt> which daniel drake
+[18:12:15] [Server thread/INFO]: imsooooooocool issued server command: /tpa leif
+[18:12:20] [Server thread/INFO]: leif_ issued server command: /tpaccept
+[18:12:25] [Server thread/INFO]: imsooooooocool tried to swim in lava
+[18:12:30] [Async Chat Thread - #7/INFO]: <Lebron_bathwater> @fingermesideways
+[18:12:30] [Async Chat Thread - #7/INFO]: <leif_> idiot
+[18:12:41] [Async Chat Thread - #7/INFO]: <imsooooooocool> grr
+[18:12:44] [Async Chat Thread - #7/INFO]: <leif_> tryna frme me
+[18:12:50] [Async Chat Thread - #7/INFO]: <Lebron_bathwater> whos the pig
+[18:12:53] [Server thread/INFO]: imsooooooocool lost connection: Disconnected
+[18:12:53] [Server thread/INFO]: imsooooooocool left the game
+[18:12:54] [Async Chat Thread - #7/INFO]: <leif_> sam
+[18:13:01] [Async Chat Thread - #7/INFO]: <Lebron_bathwater> who is sam
+[18:13:05] [Server thread/INFO]: Lebron_bathwater lost connection: Disconnected
+[18:13:05] [Server thread/INFO]: Lebron_bathwater left the game
+[18:13:12] [Server thread/INFO]: Dodecahedron lost connection: Disconnected
+[18:13:12] [Server thread/INFO]: Dodecahedron left the game
+[18:13:25] [Server thread/INFO]: leif_ lost connection: Disconnected
+[18:13:25] [Server thread/INFO]: leif_ left the game
+[18:15:12] [User Authenticator #12/INFO]: UUID of player masonclaus is 9644e7f4-50fe-3930-8c9f-7e8401f8cd61
+[18:15:12] [Server thread/INFO]: masonclaus[/0:0:0:0:0:0:0:1%0:39816] logged in with entity id 66156 at ([world]-1046.5896823518292, 75.0, -531.0308629722163)
+[18:15:18] [Craft Scheduler Thread - 354/INFO]: [AuthMe] The user masonclaus has 33 accounts:
+[18:15:18] [Craft Scheduler Thread - 354/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[18:15:18] [Craft Scheduler Thread - 354/INFO]: [AuthMe] masonclaus logged in 0:0:0:0:0:0:0:1%0
+[18:15:43] [User Authenticator #12/INFO]: UUID of player Dodecahedron is 5b31b327-76fc-30f9-a598-c81ce923231b
+[18:15:43] [Server thread/INFO]: Dodecahedron[/0:0:0:0:0:0:0:1%0:49138] logged in with entity id 66269 at ([world]-1040.0254154809866, 77.0, -552.6999999880791)
+[18:15:50] [Craft Scheduler Thread - 358/INFO]: [AuthMe] The user Dodecahedron has 33 accounts:
+[18:15:50] [Craft Scheduler Thread - 358/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[18:15:50] [Craft Scheduler Thread - 358/INFO]: [AuthMe] Dodecahedron logged in 0:0:0:0:0:0:0:1%0
+[18:15:59] [Async Chat Thread - #8/INFO]: <masonclaus> YO
+[18:16:02] [Async Chat Thread - #8/INFO]: <masonclaus> \
+[18:16:04] [Async Chat Thread - #8/INFO]: <Dodecahedron> hey
+[18:17:16] [User Authenticator #13/INFO]: UUID of player imsooooooocool is f88c5ac0-6429-38c6-b7b0-80921b55c676
+[18:17:16] [Server thread/INFO]: imsooooooocool[/0:0:0:0:0:0:0:1%0:58166] logged in with entity id 66387 at ([world]-700.0514576194373, 200.0, -1492.3428351050557)
+[18:17:17] [Server thread/INFO]: masonclaus issued server command: /w dodecahedron I'm going mining again
+[18:17:32] [Craft Scheduler Thread - 369/INFO]: [AuthMe] The user imsooooooocool has 33 accounts:
+[18:17:32] [Craft Scheduler Thread - 369/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, lebron_bathwater, vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[18:17:32] [Craft Scheduler Thread - 369/INFO]: [AuthMe] imsooooooocool logged in 0:0:0:0:0:0:0:1%0
+[18:18:52] [User Authenticator #14/INFO]: UUID of player Lebron_bathwater is a7b40030-9ab6-31e5-91b7-8a9ddaca035e
+[18:18:52] [Server thread/INFO]: Lebron_bathwater[/0:0:0:0:0:0:0:1%0:46828] logged in with entity id 66662 at ([world]267.22998139348556, 19.0, 548.0737275267826)
+[18:18:57] [Craft Scheduler Thread - 379/INFO]: [AuthMe] The user Lebron_bathwater has 33 accounts:
+[18:18:57] [Craft Scheduler Thread - 379/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, Dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, Lebron_bathwater, vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[18:18:57] [Craft Scheduler Thread - 379/INFO]: [AuthMe] Lebron_bathwater logged in 0:0:0:0:0:0:0:1%0
+[18:19:10] [Server thread/INFO]: masonclaus issued server command: /
+[18:19:16] [Server thread/INFO]: imsooooooocool fell from a high place
+[18:19:37] [Server thread/INFO]: masonclaus lost connection: Disconnected
+[18:19:37] [Server thread/INFO]: masonclaus left the game
+[18:20:34] [Server thread/INFO]: Dodecahedron lost connection: Disconnected
+[18:20:34] [Server thread/INFO]: Dodecahedron left the game
+[18:23:37] [Async Chat Thread - #9/INFO]: <imsooooooocool> bodie can can i leather
+[18:23:43] [Async Chat Thread - #9/INFO]: <imsooooooocool> hes not even on
+[18:23:48] [Async Chat Thread - #9/INFO]: <imsooooooocool> cobalt
+[18:23:53] [Async Chat Thread - #9/INFO]: <imsooooooocool> i should get leather
+[18:24:24] [Craft Scheduler Thread - 419/WARN]: [Vault] Plugin Vault v1.2.27-b349 generated an exception while executing task 3
+java.lang.NoSuchMethodError: 'org.bukkit.entity.Player[] org.bukkit.Server.getOnlinePlayers()'
+	at net.milkbowl.vault.Metrics.postPlugin(Metrics.java:387) ~[?:?]
+	at net.milkbowl.vault.Metrics.access$400(Metrics.java:63) ~[?:?]
+	at net.milkbowl.vault.Metrics$4.run(Metrics.java:275) ~[?:?]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftTask.run(CraftTask.java:64) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:52) ~[patched_1.12.2.jar:git-Paper-1620]
+	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22) ~[patched_1.12.2.jar:git-Paper-1620]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+[18:24:34] [Async Chat Thread - #9/INFO]: <Lebron_bathwater> yo daniel
+[18:24:37] [Async Chat Thread - #9/INFO]: <Cobalt> yeah
+[18:24:41] [Async Chat Thread - #9/INFO]: <imsooooooocool> tw
+[18:24:41] [User Authenticator #15/INFO]: UUID of player skibidi_toilet is fc9742a0-1735-33aa-aa6c-ca922990afa9
+[18:24:41] [Server thread/INFO]: skibidi_toilet[/0:0:0:0:0:0:0:1%0:51544] logged in with entity id 67609 at ([world]648.4112569211151, 67.0, 1335.4518162182985)
+[18:24:42] [Async Chat Thread - #9/INFO]: <Lebron_bathwater> can i tp to you
+[18:24:44] [Async Chat Thread - #9/INFO]: <imsooooooocool> hii
+[18:24:45] [Server thread/INFO]: Lebron_bathwater was slain by Wolf
+[18:24:49] [Async Chat Thread - #9/INFO]: <Cobalt> nah im in secret base
+[18:24:57] [Async Chat Thread - #9/INFO]: <imsooooooocool> im at a secret base too
+[18:25:03] [Async Chat Thread - #9/INFO]: <Lebron_bathwater> who are yo
+[18:25:05] [Async Chat Thread - #9/INFO]: <imsooooooocool> what base we ight be at the same one
+[18:25:11] [Server thread/INFO]: skibidi_toilet lost connection: Login timeout exceeded, you have been kicked from the server, please try again!
+[18:25:11] [Server thread/INFO]: skibidi_toilet left the game
+[18:25:11] [Server thread/WARN]: handleDisconnection() called twice
+[18:25:14] [Async Chat Thread - #9/INFO]: <imsooooooocool> what your cords
+[18:25:15] [User Authenticator #15/INFO]: UUID of player skibidi_toilet is fc9742a0-1735-33aa-aa6c-ca922990afa9
+[18:25:15] [Server thread/INFO]: skibidi_toilet[/0:0:0:0:0:0:0:1%0:53320] logged in with entity id 67863 at ([world]648.4112569211151, 67.0, 1335.4518162182985)
+[18:25:17] [Async Chat Thread - #9/INFO]: <Cobalt> mine is 3000 blocks from spawn
+[18:25:18] [Server thread/INFO]: Lebron_bathwater tried to swim in lava
+[18:25:21] [Craft Scheduler Thread - 425/INFO]: [AuthMe] The user skibidi_toilet has 33 accounts:
+[18:25:21] [Craft Scheduler Thread - 425/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, Lebron_bathwater, vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[18:25:21] [Craft Scheduler Thread - 425/INFO]: [AuthMe] skibidi_toilet logged in 0:0:0:0:0:0:0:1%0
+[18:25:23] [Async Chat Thread - #9/INFO]: <imsooooooocool> sammeee
+[18:25:23] [Async Chat Thread - #9/INFO]: <Cobalt> im not giving u coords
+[18:25:33] [Async Chat Thread - #9/INFO]: <imsooooooocool> whatttttw
+[18:28:21] [Async Chat Thread - #10/INFO]: <Lebron_bathwater> HELP
+[18:28:26] [Server thread/INFO]: Lebron_bathwater drowned
+[18:28:33] [Async Chat Thread - #10/INFO]: <skibidi_toilet> drake tpa to me
+[18:28:44] [Async Chat Thread - #10/INFO]: <Lebron_bathwater> how
+[18:28:58] [Async Chat Thread - #10/INFO]: <skibidi_toilet> do /tpa skibidi_toilet
+[18:29:14] [Server thread/INFO]: Lebron_bathwater issued server command: /tpa skibidi_toilet
+[18:29:18] [Server thread/INFO]: skibidi_toilet issued server command: /tpaccept
+[18:29:38] [Async Chat Thread - #10/INFO]: <skibidi_toilet> look at this wierd mountain
+[18:29:51] [Async Chat Thread - #10/INFO]: <skibidi_toilet> its all gravel
+[18:29:52] [Async Chat Thread - #10/INFO]: <Lebron_bathwater> where?
+[18:29:56] [Async Chat Thread - #10/INFO]: <imsooooooocool> soooo weird
+[18:30:11] [Async Chat Thread - #10/INFO]: <Lebron_bathwater> who is imsooooooooooocoool
+[18:30:18] [Async Chat Thread - #10/INFO]: <skibidi_toilet> sam
+[18:30:33] [User Authenticator #16/INFO]: UUID of player owen_severson is 6f68e2bb-77c0-3227-83e5-2f1a6d3550f1
+[18:30:33] [Server thread/INFO]: owen_severson[/0:0:0:0:0:0:0:1%0:53508] logged in with entity id 69202 at ([world]-169.72661674701132, 71.0, -66.79076706891578)
+[18:30:43] [Craft Scheduler Thread - 464/INFO]: [AuthMe] The user owen_severson has 33 accounts:
+[18:30:43] [Craft Scheduler Thread - 464/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, Lebron_bathwater, vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[18:30:43] [Craft Scheduler Thread - 464/INFO]: [AuthMe] owen_severson logged in 0:0:0:0:0:0:0:1%0
+[18:30:47] [Async Chat Thread - #10/INFO]: <Lebron_bathwater> KILL OWEN !!!!!
+[18:30:50] [Async Chat Thread - #10/INFO]: <imsooooooocool> NO
+[18:30:56] [Async Chat Thread - #10/INFO]: <imsooooooocool> owen is innocent
+[18:31:00] [Async Chat Thread - #10/INFO]: <Lebron_bathwater> HE DOES NOT NEED TO LIVE
+[18:31:11] [Async Chat Thread - #10/INFO]: <Lebron_bathwater> HE SAID N WORD
+[18:31:15] [Async Chat Thread - #10/INFO]: <skibidi_toilet> nigger
+[18:31:19] [Async Chat Thread - #10/INFO]: <Lebron_bathwater> real
+[18:31:30] [Async Chat Thread - #10/INFO]: <Cobalt> faggot
+[18:31:39] [Async Chat Thread - #10/INFO]: <owen_severson> twink
+[18:31:48] [Async Chat Thread - #10/INFO]: <Cobalt> me fr
+[18:31:52] [Async Chat Thread - #10/INFO]: <Cobalt> ts kevin pmo
+[18:31:55] [Async Chat Thread - #10/INFO]: <Cobalt> gurt
+[18:32:00] [Async Chat Thread - #10/INFO]: <skibidi_toilet> daniel you should date oscar
+[18:32:11] [Async Chat Thread - #10/INFO]: <Cobalt> hell no hes weird
+[18:32:30] [Server thread/INFO]: skibidi_toilet lost connection: Disconnected
+[18:32:30] [Server thread/INFO]: skibidi_toilet left the game
+[18:32:40] [Async Chat Thread - #10/INFO]: <Cobalt> + he tried touching me in 7th grade so i dont like him for that
+[18:32:52] [User Authenticator #17/INFO]: UUID of player skibidi_toilet is fc9742a0-1735-33aa-aa6c-ca922990afa9
+[18:32:52] [Server thread/INFO]: skibidi_toilet[/0:0:0:0:0:0:0:1%0:51548] logged in with entity id 69922 at ([world]351.19518264415376, 82.0, 1598.6874770344953)
+[18:32:57] [Async Chat Thread - #10/INFO]: <Cobalt> wait u didnt see my message
+[18:33:01] [Craft Scheduler Thread - 480/INFO]: [AuthMe] The user skibidi_toilet has 33 accounts:
+[18:33:01] [Craft Scheduler Thread - 480/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, Lebron_bathwater, vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[18:33:01] [Craft Scheduler Thread - 480/INFO]: [AuthMe] skibidi_toilet logged in 0:0:0:0:0:0:0:1%0
+[18:33:08] [Async Chat Thread - #10/INFO]: <skibidi_toilet> what message
+[18:33:08] [Async Chat Thread - #10/INFO]: <Cobalt> + he tried touching me in 7th grade so i dont like him that much really
+[18:33:23] [Async Chat Thread - #10/INFO]: <skibidi_toilet> he tries touching me every day
+[18:33:30] [Async Chat Thread - #10/INFO]: <Cobalt> yeah but it was such a big issue
+[18:33:33] [Async Chat Thread - #10/INFO]: <Cobalt> the teacher had to move him
+[18:33:38] [Async Chat Thread - #10/INFO]: <Cobalt> because i was getting so uncomfortable
+[18:33:40] [Async Chat Thread - #10/INFO]: <skibidi_toilet> damn
+[18:33:51] [Async Chat Thread - #10/INFO]: <Cobalt> it wasnt in a joking way i wasnt joking when i was telling him stop
+[18:33:56] [Async Chat Thread - #10/INFO]: <owen_severson> im gonna touch drake and keagan
+[18:34:17] [Server thread/INFO]: imsooooooocool tried to swim in lava
+[18:34:23] [Async Chat Thread - #10/INFO]: <Lebron_bathwater> oscar is sigma
+[18:34:35] [Async Chat Thread - #10/INFO]: <Lebron_bathwater> OWEN IS DEAD
+[18:34:48] [Async Chat Thread - #10/INFO]: <owen_severson> owen is sigma drake is dead allah akbar
+[18:35:02] [Async Chat Thread - #10/INFO]: <Lebron_bathwater> Owen is a nigger
+[18:35:05] [Server thread/INFO]: skibidi_toilet issued server command: /tpa owen_severson
+[18:35:15] [Async Chat Thread - #10/INFO]: <Cobalt> such kind words of joy and whimsy
+[18:35:18] [User Authenticator #18/INFO]: UUID of player masonclaus is 9644e7f4-50fe-3930-8c9f-7e8401f8cd61
+[18:35:18] [Server thread/INFO]: masonclaus[/0:0:0:0:0:0:0:1%0:53080] logged in with entity id 71079 at ([world]-1033.699999988079, 49.0, -528.1083319049669)
+[18:35:22] [Server thread/INFO]: owen_severson issued server command: /tpaccept
+[18:35:26] [Craft Scheduler Thread - 498/INFO]: [AuthMe] The user masonclaus has 33 accounts:
+[18:35:26] [Craft Scheduler Thread - 498/INFO]: [AuthMe] jamar_higgs, Cobalt, paxton, yeeryee1142_, skibidi_toilet, leif_, cullen, heny, bodeman115, masonclaus, nate_higgers69_, dying_fetus_porn, d_piddy, nate_higgers, fingermesideways, bodeman115_v2, dodecahedron, dihcrackhw, copper_block, vivy, bodeman1150, raptot_thegreat_, yahyaahmed, Lebron_bathwater, vigel, gb_, owen_severson, raptot_thegreat, p_dippy, raptor_thegreat_, con, bodeis_big, imsooooooocool.
+[18:35:26] [Craft Scheduler Thread - 498/INFO]: [AuthMe] masonclaus logged in 0:0:0:0:0:0:0:1%0
+[18:35:37] [Async Chat Thread - #10/INFO]: <Lebron_bathwater> KILL HIM
+[18:35:41] [Async Chat Thread - #10/INFO]: <masonclaus> Stfu
+[18:35:52] [Server thread/INFO]: skibidi_toilet issued server command: /tpa masonclaus
+[18:35:56] [Async Chat Thread - #10/INFO]: <Lebron_bathwater> owen tp to me
+[18:35:57] [Server thread/INFO]: masonclaus issued server command: /tpdeny
+[18:36:04] [Async Chat Thread - #10/INFO]: <skibidi_toilet> why mason
+[18:36:13] [Async Chat Thread - #10/INFO]: <masonclaus> I'm in a mine rn
+[18:36:30] [Async Chat Thread - #10/INFO]: <Lebron_bathwater> Owens sister is hot
+[18:36:31] [Server thread/INFO]: skibidi_toilet issued server command: /tpa masonclaus
+[18:36:38] [Server thread/INFO]: imsooooooocool lost connection: Timed out
+[18:36:38] [Server thread/INFO]: imsooooooocool left the game
+[18:36:40] [Server thread/INFO]: masonclaus issued server command: /tpdeny
+[18:36:45] [Async Chat Thread - #10/INFO]: <skibidi_toilet> bro owen's sister is so hot
+[18:36:50] [Async Chat Thread - #10/INFO]: <Lebron_bathwater> fr
+[18:37:00] [Async Chat Thread - #10/INFO]: <skibidi_toilet> i wanna put it in
+[18:37:10] [Async Chat Thread - #10/INFO]: <Cobalt> lock in bro
+[18:37:25] [Server thread/INFO]: Lebron_bathwater was shot by Skeleton
+[18:37:37] [Async Chat Thread - #10/INFO]: <skibidi_toilet> thats you owen
+[18:37:42] [Async Chat Thread - #10/INFO]: <skibidi_toilet> your a chicken
+[18:37:56] [Async Chat Thread - #10/INFO]: <owen_severson> nobody calls me chicken
+[18:37:58] [Async Chat Thread - #10/INFO]: <Lebron_bathwater> Owen do you like hot lava chicken
+[18:38:15] [Async Chat Thread - #10/INFO]: <owen_severson> la la la lava chi chi chi chicken
+[18:38:25] [Async Chat Thread - #10/INFO]: <masonclaus> Steves lava chicken
+[18:38:26] [Async Chat Thread - #10/INFO]: <skibidi_toilet> drake i faked my orgasme last night
+[18:38:32] [Async Chat Thread - #10/INFO]: <Lebron_bathwater> BIG OL RED ONES
+[18:38:43] [Async Chat Thread - #10/INFO]: <Lebron_bathwater> :(((
+[18:38:57] [Async Chat Thread - #10/INFO]: <skibidi_toilet> i fake orgasms while im beating it
+[18:39:07] [Async Chat Thread - #10/INFO]: <Cobalt> thats called edging

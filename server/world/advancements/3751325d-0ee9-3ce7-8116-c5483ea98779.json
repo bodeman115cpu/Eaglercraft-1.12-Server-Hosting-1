@@ -47,6 +47,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/observer": {
+    "criteria": {
+      "has_quartz": "2025-04-22 22:36:37 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/writable_book": {
+    "criteria": {
+      "has_book": "2025-04-22 22:17:25 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_wooden_slab": {
     "criteria": {
       "has_planks": "2025-04-17 17:54:31 +0000"
@@ -89,6 +101,12 @@
     },
     "done": true
   },
+  "minecraft:nether/root": {
+    "criteria": {
+      "entered_nether": "2025-04-22 22:36:26 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/yellow_concrete_powder": {
     "criteria": {
       "has_gravel": "2025-04-21 14:27:41 +0000"
@@ -104,6 +122,12 @@
   "minecraft:recipes/combat/leather_helmet": {
     "criteria": {
       "has_leather": "2025-04-17 18:09:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pumpkin_seeds": {
+    "criteria": {
+      "has_pumpkin": "2025-04-24 14:26:54 +0000"
     },
     "done": true
   },
@@ -251,6 +275,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/redstone_lamp": {
+    "criteria": {
+      "has_glowstone": "2025-04-22 22:44:55 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/sign": {
     "criteria": {
       "has_planks": "2025-04-17 17:54:31 +0000"
@@ -266,6 +296,12 @@
   "minecraft:recipes/decorations/jukebox": {
     "criteria": {
       "has_diamond": "2025-04-21 15:20:49 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diorite": {
+    "criteria": {
+      "has_quartz": "2025-04-22 22:36:37 +0000"
     },
     "done": true
   },
@@ -329,6 +365,7 @@
       "chicken": "2025-04-21 15:47:46 +0000",
       "cooked_mutton": "2025-04-21 15:08:16 +0000",
       "cooked_beef": "2025-04-21 14:01:51 +0000",
+      "beef": "2025-04-24 15:39:59 +0000",
       "rotten_flesh": "2025-04-21 14:34:31 +0000",
       "cooked_chicken": "2025-04-21 13:38:43 +0000"
     },
@@ -484,6 +521,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/granite": {
+    "criteria": {
+      "has_quartz": "2025-04-22 22:36:37 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/purple_concrete_powder": {
     "criteria": {
       "has_gravel": "2025-04-21 14:27:41 +0000"
@@ -547,6 +590,12 @@
   "minecraft:recipes/combat/diamond_chestplate": {
     "criteria": {
       "has_diamond": "2025-04-21 15:20:49 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/comparator": {
+    "criteria": {
+      "has_quartz": "2025-04-22 22:36:37 +0000"
     },
     "done": true
   },
@@ -802,6 +851,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/spectral_arrow": {
+    "criteria": {
+      "has_glowstone_dust": "2025-04-22 22:39:09 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/white_stained_glass_pane": {
     "criteria": {
       "has_glass": "2025-04-22 20:38:12 +0000"
@@ -810,18 +865,27 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "zombie_pigman": "2025-04-22 22:41:23 +0000",
       "zombie_villager": "2025-04-21 15:23:51 +0000",
       "skeleton": "2025-04-21 13:39:24 +0000",
       "husk": "2025-04-21 15:06:09 +0000",
       "zombie": "2025-04-17 17:54:01 +0000",
+      "witch": "2025-04-22 23:24:19 +0000",
       "spider": "2025-04-21 13:40:50 +0000",
-      "creeper": "2025-04-21 14:34:05 +0000"
+      "creeper": "2025-04-21 14:34:05 +0000",
+      "enderman": "2025-04-23 15:17:30 +0000"
     },
     "done": false
   },
   "minecraft:recipes/tools/diamond_shovel": {
     "criteria": {
       "has_diamond": "2025-04-21 15:20:49 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/enter_the_nether": {
+    "criteria": {
+      "entered_nether": "2025-04-22 22:36:26 +0000"
     },
     "done": true
   },
@@ -1191,6 +1255,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/bookshelf": {
+    "criteria": {
+      "has_book": "2025-04-22 22:17:25 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/fence": {
     "criteria": {
       "has_planks": "2025-04-17 17:54:31 +0000"
@@ -1212,6 +1282,12 @@
   "minecraft:recipes/building_blocks/andesite": {
     "criteria": {
       "has_stone": "2025-04-21 13:43:02 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/glowstone": {
+    "criteria": {
+      "has_glowstone_dust": "2025-04-22 22:39:09 +0000"
     },
     "done": true
   },
@@ -1365,6 +1441,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/quartz_block": {
+    "criteria": {
+      "has_quartz": "2025-04-22 22:36:37 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/gray_dye": {
     "criteria": {
       "has_bonemeal": "2025-04-22 18:04:33 +0000"
@@ -1374,6 +1456,8 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "forest": "2025-04-22 21:43:42 +0000",
+      "swampland": "2025-04-24 14:45:08 +0000",
+      "birch_forest": "2025-04-24 15:34:38 +0000",
       "deep_ocean": "2025-04-21 15:23:45 +0000",
       "beaches": "2025-04-21 14:47:29 +0000",
       "desert_hills": "2025-04-21 14:47:35 +0000",
@@ -1383,7 +1467,9 @@
       "savanna_rock": "2025-04-17 17:52:35 +0000",
       "taiga": "2025-04-17 18:10:00 +0000",
       "taiga_hills": "2025-04-21 14:31:18 +0000",
+      "birch_forest_hills": "2025-04-24 15:35:02 +0000",
       "ocean": "2025-04-21 15:01:38 +0000",
+      "extreme_hills": "2025-04-22 23:27:27 +0000",
       "river": "2025-04-21 14:47:25 +0000",
       "desert": "2025-04-21 15:05:25 +0000"
     },
@@ -1515,6 +1601,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/daylight_detector": {
+    "criteria": {
+      "has_quartz": "2025-04-22 22:36:37 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/pumpkin_pie": {
+    "criteria": {
+      "has_pumpkin": "2025-04-24 14:26:54 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/pink_wool": {
     "criteria": {
       "has_white_wool": "2025-04-21 14:45:39 +0000"
@@ -1536,6 +1634,12 @@
   "minecraft:recipes/decorations/brown_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2025-04-22 15:18:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/lit_pumpkin": {
+    "criteria": {
+      "has_pumpkin": "2025-04-24 14:26:54 +0000"
     },
     "done": true
   },

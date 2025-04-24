@@ -271,7 +271,11 @@
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
-      "bread": "2025-04-22 18:04:51 +0000"
+      "cooked_mutton": "2025-04-24 13:09:06 +0000",
+      "cooked_beef": "2025-04-24 16:13:26 +0000",
+      "bread": "2025-04-22 18:04:51 +0000",
+      "cooked_chicken": "2025-04-24 15:46:54 +0000",
+      "carrot": "2025-04-24 15:38:44 +0000"
     },
     "done": false
   },
@@ -617,6 +621,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/black_bed": {
+    "criteria": {
+      "has_black_wool": "2025-04-24 15:39:06 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/bowl": {
     "criteria": {
       "has_red_mushroom": "2025-04-21 14:44:06 +0000"
@@ -904,6 +914,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/arrow": {
+    "criteria": {
+      "has_feather": "2025-04-24 15:38:47 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_carpet": {
+    "criteria": {
+      "has_black_wool": "2025-04-24 15:39:06 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/coal_block": {
     "criteria": {
       "has_at_least_9_coal": "2025-04-18 02:26:53 +0000"
@@ -991,6 +1013,12 @@
   "minecraft:recipes/building_blocks/andesite": {
     "criteria": {
       "has_stone": "2025-04-18 04:05:22 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_banner": {
+    "criteria": {
+      "has_black_wool": "2025-04-24 15:39:06 +0000"
     },
     "done": true
   },
@@ -1245,6 +1273,12 @@
   "minecraft:recipes/transportation/dark_oak_boat": {
     "criteria": {
       "entered_water": "2025-04-17 17:07:51 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/carrot_on_a_stick": {
+    "criteria": {
+      "has_carrot": "2025-04-24 15:34:48 +0000"
     },
     "done": true
   },

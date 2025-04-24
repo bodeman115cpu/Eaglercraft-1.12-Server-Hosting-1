@@ -29,6 +29,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/acacia_wooden_slab": {
+    "criteria": {
+      "has_planks": "2025-04-24 15:55:17 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/magenta_concrete_powder": {
     "criteria": {
       "has_gravel": "2025-04-17 17:57:10 +0000"
@@ -44,6 +50,12 @@
   "minecraft:recipes/combat/iron_sword": {
     "criteria": {
       "has_iron_ingot": "2025-04-17 18:00:18 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/paper": {
+    "criteria": {
+      "has_reeds": "2025-04-23 13:48:01 +0000"
     },
     "done": true
   },
@@ -239,6 +251,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/acacia_fence_gate": {
+    "criteria": {
+      "has_planks": "2025-04-24 15:55:17 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/coal_block": {
     "criteria": {
       "has_at_least_9_coal": "2025-04-17 17:55:15 +0000"
@@ -326,7 +344,10 @@
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
       "cooked_mutton": "2025-04-17 17:54:33 +0000",
-      "cooked_beef": "2025-04-21 14:06:51 +0000"
+      "cooked_beef": "2025-04-21 14:06:51 +0000",
+      "porkchop": "2025-04-23 13:41:40 +0000",
+      "mutton": "2025-04-23 13:51:26 +0000",
+      "cooked_chicken": "2025-04-23 13:42:28 +0000"
     },
     "done": false
   },
@@ -516,6 +537,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/acacia_planks": {
+    "criteria": {
+      "has_log2": "2025-04-24 15:55:14 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/purple_concrete_powder": {
     "criteria": {
       "has_gravel": "2025-04-17 17:57:10 +0000"
@@ -534,6 +561,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/acacia_fence": {
+    "criteria": {
+      "has_planks": "2025-04-24 15:55:17 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/magenta_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2025-04-17 18:08:50 +0000"
@@ -543,6 +576,12 @@
   "minecraft:recipes/decorations/iron_bars": {
     "criteria": {
       "has_iron_ingot": "2025-04-17 18:00:18 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/sugar": {
+    "criteria": {
+      "has_reeds": "2025-04-23 13:48:01 +0000"
     },
     "done": true
   },
@@ -596,9 +635,11 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "swampland": "2025-04-24 15:58:45 +0000",
       "deep_ocean": "2025-04-21 14:10:31 +0000",
       "beaches": "2025-04-17 17:51:11 +0000",
       "savanna": "2025-04-17 18:07:01 +0000",
+      "plains": "2025-04-23 13:47:12 +0000",
       "savanna_rock": "2025-04-17 17:46:29 +0000",
       "taiga": "2025-04-17 17:50:35 +0000",
       "taiga_hills": "2025-04-17 17:48:05 +0000",
@@ -719,6 +760,12 @@
   "minecraft:recipes/redstone/iron_trapdoor": {
     "criteria": {
       "has_iron_ingot": "2025-04-17 18:00:18 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/acacia_door": {
+    "criteria": {
+      "has_planks": "2025-04-24 15:55:17 +0000"
     },
     "done": true
   },
@@ -955,6 +1002,12 @@
   "minecraft:recipes/building_blocks/red_wool": {
     "criteria": {
       "has_white_wool": "2025-04-17 17:52:05 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_stairs": {
+    "criteria": {
+      "has_planks": "2025-04-24 15:55:17 +0000"
     },
     "done": true
   },

@@ -311,6 +311,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/sandstone_stairs": {
+    "criteria": {
+      "has_sandstone": "2025-04-24 13:34:29 +0000"
+    },
+    "done": true
+  },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
       "cooked_porkchop": "2025-04-18 02:59:46 +0000",
@@ -438,6 +444,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/sandstone_slab": {
+    "criteria": {
+      "has_sandstone": "2025-04-24 13:34:29 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/emerald": {
     "criteria": {
       "has_the_recipe": "2025-04-21 14:39:27 +0000"
@@ -447,6 +459,12 @@
   "minecraft:recipes/decorations/black_stained_glass_pane": {
     "criteria": {
       "has_glass": "2025-04-18 02:44:38 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_sandstone": {
+    "criteria": {
+      "has_sandstone": "2025-04-24 13:34:29 +0000"
     },
     "done": true
   },
@@ -809,6 +827,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/anvil": {
+    "criteria": {
+      "has_iron_block": "2025-04-24 14:45:48 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/light_blue_stained_glass": {
     "criteria": {
       "has_glass": "2025-04-18 02:44:38 +0000"
@@ -965,6 +989,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stone_slab": {
+    "criteria": {
+      "has_stone": "2025-04-23 13:57:44 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/coal_block": {
     "criteria": {
       "has_at_least_9_coal": "2025-04-18 02:11:12 +0000"
@@ -1115,6 +1145,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/stone_button": {
+    "criteria": {
+      "has_stone": "2025-04-23 13:57:44 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/iron_chestplate": {
     "criteria": {
       "has_iron_ingot": "2025-04-18 02:37:27 +0000"
@@ -1202,13 +1238,16 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "beaches": "2025-04-22 15:59:39 +0000",
+      "desert_hills": "2025-04-24 14:47:57 +0000",
       "forest_hills": "2025-04-18 02:57:24 +0000",
       "savanna": "2025-04-18 01:58:33 +0000",
       "plains": "2025-04-18 02:12:58 +0000",
       "savanna_rock": "2025-04-18 01:55:02 +0000",
       "taiga": "2025-04-18 02:54:01 +0000",
       "taiga_hills": "2025-04-18 02:03:58 +0000",
-      "river": "2025-04-22 15:59:11 +0000"
+      "ocean": "2025-04-24 16:44:55 +0000",
+      "river": "2025-04-22 15:59:11 +0000",
+      "desert": "2025-04-24 13:33:41 +0000"
     },
     "done": false
   },
@@ -1251,6 +1290,12 @@
   "minecraft:husbandry/plant_seed": {
     "criteria": {
       "wheat": "2025-04-18 03:40:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/stone_pressure_plate": {
+    "criteria": {
+      "has_stone": "2025-04-23 13:57:44 +0000"
     },
     "done": true
   },
@@ -1329,6 +1374,12 @@
   "minecraft:husbandry/breed_an_animal": {
     "criteria": {
       "bred_chicken": "2025-04-18 04:36:38 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stonebrick": {
+    "criteria": {
+      "has_stone": "2025-04-23 13:57:44 +0000"
     },
     "done": true
   },
